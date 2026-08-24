@@ -1,0 +1,41 @@
+[
+  {
+    "name": "copilotprompts-mcp-server-review",
+    "source": "pnp",
+    "title": "MCP Server Review Skill for GitHub Copilot",
+    "shortDescription": "A GitHub Copilot custom skill that reviews MCP servers for protocol compliance, obsolete features, missing requirements, and security issues.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/skills/mcp-server-review",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/skills/mcp-server-review",
+    "longDescription": [
+      "A reusable GitHub Copilot skill that reviews Model Context Protocol servers against the 2026-07-28 protocol revision. It identifies removed and deprecated features, validates request metadata and response handling, separates security requirements from style preferences, and clearly reports checks that could not be determined. Install it by copying the SKILL.md file into your repository's .github/skills/mcp-server-review/ folder."
+    ],
+    "creationDateTime": "2026-08-15",
+    "updateDateTime": "2026-08-25",
+    "products": [
+      "GitHub Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/skills/mcp-server-review/assets/example-report.png",
+        "alt": "Example MCP server review report produced by the skill"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "OwnOptic",
+        "pictureUrl": "https://github.com/OwnOptic.png",
+        "name": "Elliot Margot"
+      }
+    ],
+    "references": [
+      {
+        "name": "GitHub Copilot",
+        "description": "GitHub Copilot",
+        "url": "https://copilot.github.com/"
+      }
+    ]
+  }
+]

@@ -28,7 +28,7 @@ Produce a review report with these sections:
 
 1. **Revision verdict** - one line stating which revision the code appears to implement, and the evidence for that conclusion
 2. **Blocking findings** - table of `Finding | Location | Why it breaks | Fix`
-3. **Security findings** - the spec's MUST-level security requirements, listed separately because they are not stylistic
+3. **Security findings** - the spec's security requirements with their MUST or SHOULD levels, listed separately because they are not stylistic
 4. **Deprecated but working** - features on the twelve month removal clock
 5. **Not determined** - checks that could not be evaluated from the code provided, and what to look at to resolve each
 6. **Nothing to change** - the checks that passed
@@ -66,7 +66,7 @@ A server that only supports this revision and receives legacy traffic **should**
 
 Under Streamable HTTP the client mirrors body fields into headers so intermediaries can route without parsing the body. The server has obligations on the receiving side.
 
-**Required headers on every POST:**
+**Required headers on every JSON-RPC request POST:**
 
 - `MCP-Protocol-Version` - must equal the `io.modelcontextprotocol/protocolVersion` value inside `params._meta`
 - `Mcp-Method` - must equal the body's `method`
@@ -90,17 +90,17 @@ io.modelcontextprotocol/clientCapabilities
 - For a **request**, the server returns either `Content-Type: application/json` with one JSON object, or `Content-Type: text/event-stream` with a stream. Either is valid; the client must support both
 - For a **notification**, the server returns `202 Accepted` with **no body** when it accepts it
 - On an SSE stream, the server may send notifications related to that request before the final response, and the final response should terminate the stream
-- Closing the response stream **must** be treated as cancellation of that request. Confirm the server actually stops work rather than merely detaching
+- Closing the response stream **must** be treated as cancellation of that request. The server **should** stop work as soon as practical and **must not** send further messages for it
 - When opening an SSE stream, the server **should** send `X-Accel-Buffering: no` so reverse proxies do not buffer events
 - For long-lived `subscriptions/listen` streams, the server is encouraged to emit periodic SSE comment lines (`:`) as keep-alives
 
 ## Step 5: Check the security requirements
 
-These are MUST-level in the specification. Report them separately from style findings.
+Report the specification's security requirements separately from style findings, preserving their MUST or SHOULD requirement levels.
 
-1. **Origin validation.** The server **must** validate the `Origin` header on all incoming connections to prevent DNS rebinding attacks, and respond `403 Forbidden` when it is present and invalid. This is the most commonly missing check in server code
-2. **Local binding.** When running locally, bind to `127.0.0.1` rather than `0.0.0.0`
-3. **Authentication.** The server should implement proper authentication for all connections
+1. **Origin validation (MUST).** The server **must** validate the `Origin` header on all incoming connections to prevent DNS rebinding attacks, and respond `403 Forbidden` when it is present and invalid. This is the most commonly missing check in server code
+2. **Local binding (SHOULD).** When running locally, bind to `127.0.0.1` rather than `0.0.0.0`
+3. **Authentication (SHOULD).** The server should implement proper authentication for all connections
 
 Without the first two, a remote web page can reach a local MCP server through the user's browser.
 
@@ -139,14 +139,40 @@ Not implementing these is not a defect, but they are the reason to move:
 
 ## Step 9: Write the report
 
-Follow the Output Structure above. Then apply these rules before returning it:
+Follow the Output Structure above.
+
+## Rules
 
 - **Cite the rule** behind every finding. A finding a reader cannot verify is not actionable
 - **Separate MUST from SHOULD.** The specification distinguishes them and so should the report
 - **Put anything unverifiable in "Not determined"**, never in "passed". If the auth path is in a separate service you cannot see, say that
 - **Do not guess header names, error codes or limits.** If you are unsure, check the specification at https://modelcontextprotocol.io/specification/2026-07-28/basic/transports/streamable-http rather than writing from memory. The single most likely way to produce a wrong review of this revision is to describe the protocol as you remember it
 
-## Reference
+## Example
+
+**Input:** Review a Streamable HTTP server that handles `initialize`, mints `Mcp-Session-Id`, binds locally to `0.0.0.0`, and has authentication implemented by an API gateway whose configuration is not included.
+
+**Output excerpt:**
+
+| Section | Finding |
+|---|---|
+| Revision verdict | The server implements a pre-2026-07-28 revision, evidenced by its `initialize` handler and session header handling |
+| Blocking findings | Remove the `initialize` handler and stop minting or requiring `Mcp-Session-Id` |
+| Security findings | Local binding to `0.0.0.0` does not meet the specification's SHOULD-level localhost-binding guidance |
+| Not determined | Authentication cannot be evaluated without the API gateway configuration |
+
+## Validation Checklist
+
+Before returning the report, verify:
+
+- [ ] The revision verdict cites evidence from the reviewed code
+- [ ] Every finding cites a specification rule and preserves its MUST or SHOULD level
+- [ ] Removed features, security findings, and deprecated features are reported separately
+- [ ] Unverifiable checks appear under **Not determined**, not **Nothing to change**
+- [ ] Header names, error codes, and protocol behavior were checked against the target revision
+- [ ] The report follows every section in the Output Structure
+
+## References
 
 - Streamable HTTP transport: https://modelcontextprotocol.io/specification/2026-07-28/basic/transports/streamable-http
 - What changed in 2026-07-28: https://blog.modelcontextprotocol.io/posts/2026-07-28

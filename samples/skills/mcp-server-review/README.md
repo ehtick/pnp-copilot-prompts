@@ -28,12 +28,13 @@ The skill walks Copilot through nine steps:
 
 - **Establishing the revision** from evidence in the code rather than from an SDK version number, since SDK majors and protocol revisions move independently
 - **Finding removed features still present** - the `initialize` / `initialized` handshake (SEP-2575), `Mcp-Session-Id` (SEP-2567), the GET stream endpoint, `Last-Event-ID` resumability, and server-initiated JSON-RPC requests on SSE
-- **Checking the request metadata contract** - the required `MCP-Protocol-Version`, `Mcp-Method` and `Mcp-Name` headers, the exact `_meta` key names, and whether the server actually rejects header and body disagreement with error `-32020`
+- **Checking the request metadata contract** - the required `MCP-Protocol-Version`, `Mcp-Method` and `Mcp-Name` headers for JSON-RPC requests, the exact `_meta` key names, and whether the server actually rejects header and body disagreement with error `-32020`
 - **Checking response handling** - both valid response shapes, `202 Accepted` for notifications, stream closure as cancellation
-- **Checking the security requirements** separately, because `Origin` validation and localhost binding are MUST-level and are the most commonly missing checks in server code
+- **Checking the security requirements** separately, preserving the specification's MUST level for `Origin` validation and SHOULD levels for localhost binding and authentication
 - **Validating `x-mcp-header` annotations**, including the rule that `number` is not a permitted type and that a conforming client will exclude an entire tool whose annotations are invalid
 - **Flagging deprecated features** on the twelve month removal clock
 - **Noting what the revision added** - stateless operation, `server/discover`, cacheable list results, Multi Round-Trip Requests
+- **Writing the review report** with cited findings, explicit requirement levels, and a mandatory **Not determined** section
 
 ### The design choice that matters
 
@@ -55,6 +56,14 @@ The skill also instructs Copilot to cite the rule behind every finding, to separ
 Version|Date|Comments
 -------|----|--------
 1.0|August 15, 2026|Initial release, covering protocol revision 2026-07-28
+
+## Instructions 📝
+
+1. Copy [`SKILL.md`](./SKILL.md) into your repository at `.github/skills/mcp-server-review/SKILL.md`
+2. Open the MCP server repository or relevant server files in Visual Studio Code
+3. Open GitHub Copilot Chat
+4. Ask: "Review this MCP server for spec compliance"
+5. Provide the target protocol revision, transport, and backward compatibility requirements when prompted
 
 ## Help
 
