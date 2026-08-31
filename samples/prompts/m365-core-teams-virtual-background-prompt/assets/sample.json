@@ -1,0 +1,41 @@
+[
+  {
+    "name": "copilotprompts-m365-core-teams-virtual-background-prompt",
+    "source": "pnp",
+    "title": "M365 Core Teams Virtual Background",
+    "shortDescription": "Creates a polished Teams background featuring a bright West Seattle executive office with Microsoft branding and a sleeping dog.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-core-teams-virtual-background-prompt",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-core-teams-virtual-background-prompt",
+    "longDescription": [
+      "Creates a photorealistic Microsoft Teams virtual background featuring a bright contemporary executive office in West Seattle, Pacific Northwest scenery, modern oak finishes, Microsoft branding, and a sleeping dog."
+    ],
+    "creationDateTime": "2026-09-01",
+    "updateDateTime": "2026-09-01",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-core-teams-virtual-background-prompt/assets/demo.png",
+        "alt": "Photorealistic M365 Core Microsoft Teams virtual background in a bright West Seattle executive office"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "tonybaloney",
+        "pictureUrl": "https://github.com/tonybaloney.png",
+        "name": "Anthony Shaw"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft 365 Copilot",
+        "description": "Microsoft 365 Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
