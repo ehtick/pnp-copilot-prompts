@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-whiteboard-intranet-ideation-prompt",
+    "name": "copilotprompts-prompt-whiteboard-intranet-ideation-prompt",
     "source": "pnp",
     "title": "Generate a list of features for a company intranet",
     "shortDescription": "Ask copilot to generate a list of features for the intranet",
@@ -15,8 +15,7 @@
       "Microsoft 365 Copilot",
       "Microsoft Whiteboard"
     ],
-    "metadata": [
-    ],
+    "metadata": [],
     "thumbnails": [
       {
         "type": "image",

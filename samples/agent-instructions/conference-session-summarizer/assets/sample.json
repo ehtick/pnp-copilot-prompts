@@ -1,10 +1,10 @@
 [
   {
-    "name": "copilotprompts-conference-session-summarizer",
+    "name": "copilotprompts-agent-conference-session-summarizer",
     "source": "pnp",
     "title": "Conference session summarizer",
     "shortDescription": "This prompt help users to summarize a speaker session from a Conference.",
-     "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/conference-session-summarizer",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/conference-session-summarizer",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/conference-session-summarizer",
     "longDescription": [
       "This prompt help users to summarize a speaker session from a Conference. The agent will parse session notes, speaker presentations, recordings, and any relevant documentation uploaded as knowledge, and summarizes the output of key take aways, speaker insights, along with the reference links."
@@ -14,8 +14,7 @@
     "products": [
       "Copilot"
     ],
-    "metadata": [
-    ],
+    "metadata": [],
     "thumbnails": [
       {
         "type": "image",

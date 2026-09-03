@@ -163,8 +163,6 @@ A structured five-dimension AI use case qualification agent for Microsoft 365 Co
 
 A Jumpstart consultant has just finished an initial discovery call with a mid-size logistics company. The customer wants to "do something with AI on our contracts." The consultant opens Microsoft 365 Copilot, selects the Use Case Qualifier agent, and types: "I need to qualify a new customer use case."
 
----
-
 ### Onboarding and Discovery (Workflow 1)
 
 **Agent:** "Let us qualify this together. Before we score anything, give me a plain-language description of the use case - what problem are we solving, for whom, and what does success look like? Take your time."
@@ -174,8 +172,6 @@ A Jumpstart consultant has just finished an initial discovery call with a mid-si
 **Agent confirms:** "Got it - we are looking at AI-assisted contract review for a legal team processing 200 contracts per month, goal is to reduce manual clause review time." It then asks two questions: where do contracts live today, and is there a named business sponsor?
 
 **Consultant:** "Contracts are in SharePoint and a legacy DMS. The CFO is nominally behind this but has not committed budget yet."
-
----
 
 ### Dimension Scoring (Workflow 2)
 
@@ -190,8 +186,6 @@ A Jumpstart consultant has just finished an initial discovery call with a mid-si
 **Delivery Risk - 4/5:** "12-week timeline is realistic for this pattern. The legacy DMS dependency is the one variable that could slip the schedule."
 
 **Total: 18/25 - AMBER - Conditional Go**
-
----
 
 ### Qualification Report (Workflow 5)
 
@@ -232,8 +226,6 @@ Note: This report reflects the information shared in this session. Treat it as a
 structured starting point for stakeholder discussion, not a final investment decision.
 ```
 
----
-
 ## Mandatory Agent Configuration
 
 ### Prerequisites
@@ -260,8 +252,6 @@ structured starting point for stakeholder discussion, not a final investment dec
 | Generate the report | "Give me the full qualification report" | Jump to Workflow 5 when conversation is complete |
 | Reset | "Reset" or "New use case" | Start a fresh qualification session |
 
----
-
 ## Agent Maker Disclaimers
 
 ### Limitations
@@ -280,8 +270,6 @@ structured starting point for stakeholder discussion, not a final investment dec
 - Qualify early - before any architecture or licensing discussion. Once a customer has a preferred vendor or platform in mind, qualification becomes harder.
 - For partner delivery scoping, share the qualification report with the delivery team lead before the first technical discovery session. It surfaces assumptions the team should validate, not carry into design.
 
----
-
 ## Help
 
 We do not support samples, but this community is always willing to help, and we want to improve these samples. We use GitHub to track issues, which makes it easy for community members to volunteer their time and help resolve issues.
@@ -296,4 +284,5 @@ Finally, if you have an idea for improvement, [make a suggestion](https://github
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-ai-use-case-qualifier)
+---
+![](https://m365-visitor-stats.azurewebsites.net/copilot-prompts/copilotprompts-agent-ai-use-case-qualifier)

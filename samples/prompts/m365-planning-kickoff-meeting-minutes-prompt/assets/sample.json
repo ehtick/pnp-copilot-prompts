@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-m365-planning-kickoff-meeting-minutes-prompt",
+    "name": "copilotprompts-prompt-m365-planning-kickoff-meeting-minutes-prompt",
     "source": "pnp",
     "title": "Planning or Initiative Kickoff Meeting Minutes",
     "shortDescription": "Generate structured minutes for a planning or initiative kickoff meeting in Teams",
@@ -15,7 +15,14 @@
       "Microsoft 365 Copilot"
     ],
     "metadata": [],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/images/ilovecopilot.png",
+        "alt": "Planning or Initiative Kickoff Meeting Minutes preview"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "rogerscarias",

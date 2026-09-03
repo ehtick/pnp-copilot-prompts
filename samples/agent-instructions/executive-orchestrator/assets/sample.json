@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-executive-orchestrator",
+    "name": "copilotprompts-agent-executive-orchestrator",
     "source": "pnp",
     "title": "Executive Orchestrator: The All-in-One Productivity Agent for Microsoft 365 Leaders",
     "shortDescription": "An Executive Orchestrator agent for Microsoft 365 ",
@@ -14,14 +14,13 @@
     "products": [
       "Copilot"
     ],
-    "metadata": [
-    ],
+    "metadata": [],
     "thumbnails": [
       {
         "type": "image",
         "order": 100,
-        "url": "",
-        "alt": ""
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/images/ilovecopilot.png",
+        "alt": "Executive Orchestrator: The All-in-One Productivity Agent for Microsoft 365 Leaders preview"
       }
     ],
     "authors": [

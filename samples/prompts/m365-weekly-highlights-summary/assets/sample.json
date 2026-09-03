@@ -1,8 +1,8 @@
 [
   {
-    "name": "copilotprompts-m365-weekly-highlights-summary",
+    "name": "copilotprompts-prompt-m365-weekly-highlights-summary",
     "source": "pnp",
-    "title": "Weekly Highlights Summary",   
+    "title": "Weekly Highlights Summary",
     "shortDescription": "A weekly highlights summary prompt which scans Outlook, Teams, To Do, and Planner to generate a consise summary of key wins, upcoming plans and blockers.",
     "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-weekly-highlights-summary",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-weekly-highlights-summary",
@@ -14,8 +14,7 @@
     "products": [
       "Microsoft 365 Copilot"
     ],
-    "metadata": [
-    ],
+    "metadata": [],
     "thumbnails": [
       {
         "type": "image",

@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-peace-keeper-agent",
+    "name": "copilotprompts-agent-peace-keeper-agent",
     "source": "pnp",
     "title": "PeaceKeeper: AI-Powered Conflict Resolution & De-escalation Advisor",
     "shortDescription": "The PeaceKeeper Agent is designed to assist in conflict resolution and de-escalation.",
@@ -14,14 +14,13 @@
     "products": [
       "Copilot"
     ],
-    "metadata": [
-    ],
+    "metadata": [],
     "thumbnails": [
       {
         "type": "image",
         "order": 100,
-        "url": "",
-        "alt": ""
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/images/ilovecopilot.png",
+        "alt": "PeaceKeeper: AI-Powered Conflict Resolution & De-escalation Advisor preview"
       }
     ],
     "authors": [

@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-critical-thinking",
+    "name": "copilotprompts-agent-critical-thinking",
     "source": "pnp",
     "title": "Critical Thinking Agent",
     "shortDescription": "An agent that provides honest, critical answers and doesn't automatically agree with you.",
@@ -19,7 +19,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/critical-thinking/assets/demo.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/critical-thinking/assets/demo.png",
         "alt": "copilotprompts-critical-thinking"
       }
     ],

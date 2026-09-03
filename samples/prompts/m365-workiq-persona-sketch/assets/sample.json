@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-m365-workiq-persona-sketch",
+    "name": "copilotprompts-prompt-m365-workiq-persona-sketch",
     "source": "pnp",
     "title": "WorkIQ Persona Sketch",
     "shortDescription": "Generate a practical WorkIQ persona sketch from your recent Microsoft 365 activity patterns.",

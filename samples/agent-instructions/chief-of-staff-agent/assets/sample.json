@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-chief-of-staff-agent",
+    "name": "copilotprompts-agent-chief-of-staff-agent",
     "source": "pnp",
     "title": "Chief of Staff: Your productivity just skyrocketed",
     "shortDescription": "Your AI-powered Chief of Staff for Microsoft 365, cutting through the noise and putting you back in control.",
@@ -19,7 +19,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/chief-of-staff-agent/assets/onboarding.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/chief-of-staff-agent/assets/additional-configurations.png",
         "alt": "Chief of Staff agent onboarding screenshot"
       }
     ],

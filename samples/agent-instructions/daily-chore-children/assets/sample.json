@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-daily-chore-children",
+    "name": "copilotprompts-agent-daily-chore-children",
     "source": "pnp",
     "title": "The Hero's Chore Journey - An AI-powered gamification of daily chores for chidren",
     "shortDescription": "An AI-powered gamification of daily chores for chidren",
@@ -14,14 +14,13 @@
     "products": [
       "Copilot"
     ],
-    "metadata": [
-    ],
+    "metadata": [],
     "thumbnails": [
       {
         "type": "image",
         "order": 100,
-        "url": "",
-        "alt": ""
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/images/ilovecopilot.png",
+        "alt": "The Hero's Chore Journey - An AI-powered gamification of daily chores for chidren preview"
       }
     ],
     "authors": [

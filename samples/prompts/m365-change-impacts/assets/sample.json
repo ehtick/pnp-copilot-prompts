@@ -1,0 +1,35 @@
+[
+  {
+    "name": "copilotprompts-prompt-m365-change-impacts",
+    "source": "pnp",
+    "title": "Change Impact Analysis from Meeting Transcripts",
+    "shortDescription": "A contributed Copilot sample for Change Impact Analysis from Meeting Transcripts.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-change-impacts",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-change-impacts",
+    "longDescription": [
+      "A contributed Copilot sample for Change Impact Analysis from Meeting Transcripts."
+    ],
+    "creationDateTime": "2026-02-28",
+    "updateDateTime": "2026-02-28",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-change-impacts/assets/Change%20Impact%20Prompt%20outputs.png",
+        "alt": "Change Impact Analysis from Meeting Transcripts preview"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "dzblanco08",
+        "pictureUrl": "https://github.com/dzblanco08.png",
+        "name": "Delia Zuniga"
+      }
+    ],
+    "references": []
+  }
+]

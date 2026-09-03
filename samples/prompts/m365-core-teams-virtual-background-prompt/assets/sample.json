@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-m365-core-teams-virtual-background-prompt",
+    "name": "copilotprompts-prompt-m365-core-teams-virtual-background-prompt",
     "source": "pnp",
     "title": "M365 Core Teams Virtual Background",
     "shortDescription": "Creates a polished Teams background featuring a bright West Seattle executive office with Microsoft branding and a sleeping dog.",

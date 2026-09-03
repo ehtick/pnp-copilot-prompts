@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-prompt-context-engineer",
+    "name": "copilotprompts-skill-prompt-context-engineer",
     "source": "pnp",
     "title": "Prompt Context Engineer Skill for Cowork",
     "shortDescription": "A Cowork skill that transforms rough prompts into clear, reusable, context-engineered prompts.",
@@ -20,7 +20,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/skills/prompt-context-engineer/assets/demo2.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/skills/prompt-context-engineer/assets/demo.png",
         "alt": "Prompt Context Engineer skill demo"
       }
     ],

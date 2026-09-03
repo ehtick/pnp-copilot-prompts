@@ -1,8 +1,8 @@
 [
   {
-    "name": "copilotprompts-m365-blocker-finder",
+    "name": "copilotprompts-prompt-m365-blocker-finder",
     "source": "pnp",
-    "title": "Blocker Finder",   
+    "title": "Blocker Finder",
     "shortDescription": "Identify key blockers across Microsoft 365 and generate clear next actions and replies.",
     "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-blocker-finder",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-blocker-finder",
@@ -14,13 +14,12 @@
     "products": [
       "Microsoft 365 Copilot"
     ],
-    "metadata": [
-    ],
+    "metadata": [],
     "thumbnails": [
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-blocker-finder/assets/Blocker-Finder-2.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-blocker-finder/assets/Blocker-Finder-1.png",
         "alt": "Blocker Finder"
       }
     ],

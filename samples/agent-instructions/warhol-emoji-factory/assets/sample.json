@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-warhol-emoji-factory",
+    "name": "copilotprompts-agent-warhol-emoji-factory",
     "source": "pnp",
     "title": "WARHOL EMOJI FACTORY",
     "shortDescription": "This prompt helps you to create emojis in the style of Andy Warhol, using a factory-like approach.",
@@ -14,14 +14,13 @@
     "products": [
       "Copilot"
     ],
-    "metadata": [
-    ],
+    "metadata": [],
     "thumbnails": [
       {
         "type": "image",
         "order": 100,
-        "url": "",
-        "alt": ""
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/images/ilovecopilot.png",
+        "alt": "WARHOL EMOJI FACTORY preview"
       }
     ],
     "authors": [

@@ -1,0 +1,35 @@
+[
+  {
+    "name": "copilotprompts-prompt-m365-copilot-as-a-professional-executive-assistant",
+    "source": "pnp",
+    "title": "🚀 Microsoft 365 Copilot as a Professional Executive Assistant 💻",
+    "shortDescription": "A contributed Copilot sample for 🚀 Microsoft 365 Copilot as a Professional Executive Assistant 💻.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-copilot-as-a-professional-executive-assistant",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-copilot-as-a-professional-executive-assistant",
+    "longDescription": [
+      "A contributed Copilot sample for 🚀 Microsoft 365 Copilot as a Professional Executive Assistant 💻."
+    ],
+    "creationDateTime": "2026-02-02",
+    "updateDateTime": "2026-02-02",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-copilot-as-a-professional-executive-assistant/assets/ca2.png",
+        "alt": "🚀 Microsoft 365 Copilot as a Professional Executive Assistant 💻 preview"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "ojopiyo",
+        "pictureUrl": "https://github.com/ojopiyo.png",
+        "name": "Josiah Opiyo"
+      }
+    ],
+    "references": []
+  }
+]

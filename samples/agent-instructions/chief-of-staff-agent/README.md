@@ -97,8 +97,6 @@ A precision-oriented productivity recovery agent that acts as the user's persona
 ### The Scenario
 **You** have been out of the office for a few days, or are simply falling behind in **your** work. YOU open YOUR Copilot chat, select the **Chief of Staff (CoS)** agent and type "I need to get back up to speed."
 
----
-
 ### Onboarding (First time use)
 **CoS Response:** *"Before I can operate at full effectiveness on your behalf,* *I need to understand your operating context.*
 *This will take less than two minutes."* 
@@ -108,8 +106,6 @@ A precision-oriented productivity recovery agent that acts as the user's persona
 YOU answer each question and **CoS** confirms YOUR profile back to YOU and asks YOU to approve it before proceeding.
 
 ![onboarding-screenshot](./assets/onboarding.png)
-
----
 
 ### WORKFLOW 1️⃣ - The Catch-Up Brief 🕐
 
@@ -129,8 +125,6 @@ If **CoS** sights any quick wins to enable momentum, it will suggest a sequence 
 
 The agent closes by asking whether you want to proceed to **priority scoring** or **remove anything from scope** first.
 
----
-
 ### WORKFLOW 2️⃣ - Priority Scoring 💯
 
 You proceed with the the priority scoring activity.
@@ -142,8 +136,6 @@ You proceed with the the priority scoring activity.
 **CoS** presents the audit gate. You challenge item four for example, asking why it scored a six. It explains the reasoning, the item has an internal peer as the stakeholder, no urgency language was detected, and the deadline is eight days out. You accept the explanation and override item seven, moving it out of the list entirely because it was resolved before they left. You says "lock the list."
 
 **CoS** confirms the ranking is locked and asks whether you want the priority index as a formatted document. You says yes. The agent generates it and offers to proceed to the stakeholder urgency review.
-
----
 
 ### WORKFLOW 3️⃣ - Urgency and Sentiment Detection 🕵️‍♀️
 
@@ -157,8 +149,6 @@ You mark the internal Teams message as handled and will address the blocked ADO 
 
 **CoS** asks whether to recalculate the priority index. You say yes. The delivery partner item moves up to position four based on the updated urgency score.
 
----
-
 ### WORKFLOW 4️⃣ - Meeting Audit 🧹
 
 **CoS** retrieves your calendar for the next ten business days and evaluates each meeting.
@@ -171,8 +161,6 @@ CoS calculates that acting on all recommendations recovers four and a half hours
 
 The agent produces a ready-to-create list of three calendar blocks with titles, availability settings, and descriptions pre-populated. You open Outlook and copy-paste these ready built calendar items.
 
----
-
 ### WORKFLOW 5️⃣ - Alignment Summary 
 
 **CoS** generates a formatted session titled 'Chief of Staff Session - [today's date], containing the locked priority index, all urgency items and their assigned actions, every meeting audit decision, and the focus block details.
@@ -182,8 +170,6 @@ It then produces a task creation brief with one entry per locked priority item -
 **CoS closing response:** "Your operating plan is set. Priorities are ranked, your task brief is ready to action, and your calendar focus block details are prepared. I am ready for your next review whenever you need it."
 
 ![closing-response](./assets/closing-response.png)
-
----
 
 ## ✨ Mandatory Agent Configuration 🛠️
 
@@ -255,4 +241,5 @@ Finally, if you have an idea for improvement, [make a suggestion](https://github
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-chief-of-staff-agent)
+---
+![](https://m365-visitor-stats.azurewebsites.net/copilot-prompts/copilotprompts-agent-chief-of-staff-agent)

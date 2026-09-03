@@ -42,7 +42,7 @@ This repository accepts three types of contributions:
 | Type | Location | Core file | Description |
 |------|----------|-----------|-------------|
 | **Prompt samples** | `samples/prompts/{folder-name}/` | `README.md` | A prompt for Microsoft 365 Copilot, GitHub Copilot, or Microsoft Copilot |
-| **Agent instructions** | `samples/agent-instructions/{agent-name}/` | `readme.md` | System prompt / instructions for a Copilot Studio agent |
+| **Agent instructions** | `samples/agent-instructions/{agent-name}/` | `README.md` | System prompt / instructions for a Copilot Studio agent |
 | **Skill samples** | `samples/skills/{skill-name}/` | `SKILL.md` + `README.md` | A reusable instruction file that teaches GitHub Copilot a multi-step task |
 
 ### Sample Folder
@@ -53,11 +53,16 @@ This repository accepts three types of contributions:
 ### README.md
 
 * You will need to have a `README.md` file for your contribution, which is based on [the provided template](template/README-template.md) under the `samples` folder. Please copy this template to your project and update it accordingly. Your `README.md` must be named exactly `README.md` -- with capital letters -- as this is the information we use to make your sample public.
-* You will need to have a screenshot picture of your sample in action in the `README.md` file ("pics or it didn't happen"). The preview image must be located in the `assets` folder in the root of your sample folder.
+* You will need to have a screenshot picture of your sample in action in the `README.md` file ("pics or it didn't happen"). The preview image should be located in the `assets` folder in the root of your sample folder.
   * All screen shots must be located in the `assets` folder. Do not point to your own repository or any other external source
-* The README template contains a specific tracking image at the end of the file with an `img` element pointing to `https://m365-visitor-stats.azurewebsites.net/SamplesGallery/pnp-copilot-prompt-your-sample`. This is a transparent image which is used to track how many visits each sample receives in GitHub.
-* Update the image `src` attribute according with the repository name and folder information. For example, if your sample is named `my-prompt` in the `samples` folder, you should update the `src` attribute to `https://m365-visitor-stats.azurewebsites.net/SamplesGallery/pnp-copilot-prompt-my-prompt`
-  * Update the image `src` attribute according with the repository name and folder information.
+  * Existing samples may keep a local `.png`, `.jpg`, `.jpeg`, `.webp`, or `.gif` as their primary preview.
+  * Existing samples without a contributed image use the shared fallback at `../../../images/ilovecopilot.png` in `README.md` and `https://github.com/pnp/copilot-prompts/raw/main/images/ilovecopilot.png` in `assets/sample.json`. Do not copy the fallback into the sample folder.
+  * New contributions must include at least one sample-specific static `.png` file in `assets/`; the shared fallback is not accepted for new contributions.
+* End the README with exactly one transparent visitor tracking image using the same taxonomy-aware ID as `sample.json`:
+  * Prompt: `https://m365-visitor-stats.azurewebsites.net/copilot-prompts/copilotprompts-prompt-{folder-name}`
+  * Agent instruction: `https://m365-visitor-stats.azurewebsites.net/copilot-prompts/copilotprompts-agent-{folder-name}`
+  * Skill: `https://m365-visitor-stats.azurewebsites.net/copilot-prompts/copilotprompts-skill-{folder-name}`
+* The `name` in `assets/sample.json` must match the visitor tracking ID exactly. This taxonomy keeps IDs unique across contribution types.
 * If you find an existing sample which is similar to yours, please extend the existing one rather than submitting a new similar sample
   * When you update existing samples, please update also `README.md` file accordingly with information on provided changes and with your author details
 * Make sure to document each function in the `README.md`
@@ -80,7 +85,7 @@ This repository accepts three types of contributions:
 * Please provide a high-quality screenshot
 * If possible, use a resolution of **1920x1080**
 * You can add as many screen shots as you'd like to help users understand your sample without having to download it and install it.
-* You can include animated images (such as `.gif` files), but you must provide at least one static `.png` file
+* New contributions can include animated images such as `.gif` files, but must also provide at least one static `.png` file. Existing samples with another supported image format are grandfathered until their assets are refreshed.
 
 ---
 
@@ -141,7 +146,7 @@ The metadata file follows the same format as other samples, with these specifics
 
 * `products` must be `["GitHub Copilot"]`
 * `url` must point to `samples/skills/{skill-name}`
-* `name` must follow the pattern `copilotprompts-{skill-name}`
+* `name` must follow the pattern `copilotprompts-skill-{skill-name}`
 
 ### Scaffolding with GitHub Copilot
 

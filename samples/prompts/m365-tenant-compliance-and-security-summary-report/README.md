@@ -74,5 +74,7 @@ Finally, if you have an idea for improvement, [make a suggestion](https://github
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
+![Default sample preview](../../../images/ilovecopilot.png)
 
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-tenant-compliance-and-security-summary-report)
+---
+![](https://m365-visitor-stats.azurewebsites.net/copilot-prompts/copilotprompts-prompt-m365-tenant-compliance-and-security-summary-report)

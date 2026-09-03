@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-m365-company-party-planner",
+    "name": "copilotprompts-prompt-m365-company-party-planner",
     "source": "pnp",
     "title": "Generate an decoration, meal idea for company party",
     "shortDescription": "Generate an decoration, meal idea for company party",
@@ -14,13 +14,12 @@
     "products": [
       "Microsoft 365 Copilot"
     ],
-    "metadata": [
-    ],
+    "metadata": [],
     "thumbnails": [
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-company-party-planner/assets/company-party-planner-prompt-query.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-company-party-planner/assets/company-party-planner-prompt-full-response.png",
         "alt": "Generate an decoration, meal idea for company party"
       }
     ],

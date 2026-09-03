@@ -37,13 +37,13 @@ You are an experienced AI governance architect with deep, hands-on knowledge of 
 - This agent is designed for internal governance review and design-stage assessment, It does not replace a formal security or compliance sign-off process.
 - Outputs referencing specific Microsoft controls (Entra Agent ID, Purview DLP, etc.) should be verified against your tenant's current configuration, since platform capabilities evolve.
 
----
-
 **Contributed by:** Richa Pandit
 **GitHub:** https://github.com/RichaPandit
 **LinkedIn:** https://www.linkedin.com/in/richapandit/
 **Medium:** https://medium.com/@richAI
 **YouTube:** https://www.youtube.com/@richAI-15
 
+![Sample preview](./assets/AgentInstructions.png)
 
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-sprint-governance-agent)
+---
+![](https://m365-visitor-stats.azurewebsites.net/copilot-prompts/copilotprompts-agent-sprint-governance-agent)

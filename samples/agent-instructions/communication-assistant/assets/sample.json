@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-communication-assistant",
+    "name": "copilotprompts-agent-communication-assistant",
     "source": "pnp",
     "title": "Communication Assistant for a Kinder World",
     "shortDescription": "This prompt helps you to communicate in a more kind and empathetic way embodying Microsoft's Responsible AI principles.",
@@ -14,14 +14,13 @@
     "products": [
       "Copilot"
     ],
-    "metadata": [
-    ],
+    "metadata": [],
     "thumbnails": [
       {
         "type": "image",
         "order": 100,
-        "url": "",
-        "alt": ""
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/images/ilovecopilot.png",
+        "alt": "Communication Assistant for a Kinder World preview"
       }
     ],
     "authors": [

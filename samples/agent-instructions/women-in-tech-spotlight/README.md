@@ -160,5 +160,7 @@ women-in-tech-spotlight | Amit Suthram ([LinkedIn](www.linkedin.com/in/amitsuthr
 
 - [Microsoft Copilot Studio Documentation](https://learn.microsoft.com/microsoft-copilot-studio/)
 
+![Sample preview](./assets/demo.png)
+
 ---
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-women-in-tech-spotlight)
+![](https://m365-visitor-stats.azurewebsites.net/copilot-prompts/copilotprompts-agent-women-in-tech-spotlight)

@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-m365-7-day-inbox-review-action-framework",
+    "name": "copilotprompts-prompt-m365-7-day-inbox-review-action-framework",
     "source": "pnp",
     "title": "7-Day Outlook Inbox Review & Action Framework",
     "shortDescription": "Generate a prioritized action list from your Outlook Inbox for the past 7 days using strict rules for inclusion, exclusions, and threading.",

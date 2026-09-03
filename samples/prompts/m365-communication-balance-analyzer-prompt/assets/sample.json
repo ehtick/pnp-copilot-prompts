@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-m365-communication-balance-analyzer-prompt",
+    "name": "copilotprompts-prompt-m365-communication-balance-analyzer-prompt",
     "source": "pnp",
     "title": "Communication Balance Analyzer",
     "shortDescription": "Analyzes your recent work context to identify one thing you're over‑communicating and one thing you're under‑communicating, with specific and constructive feedback.",

@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-learning-path-architect",
+    "name": "copilotprompts-agent-learning-path-architect",
     "source": "pnp",
     "title": "Learning Path Architect",
     "shortDescription": "An intelligent AI agent that creates personalized, adaptive learning journeys based on career goals and current skills.",
@@ -15,10 +15,22 @@
       "Copilot"
     ],
     "metadata": [
-      { "name": "Category", "value": "Agent" },
-      { "name": "Topic", "value": "Learning" },
-      { "name": "Scenario", "value": "Career Development" },
-      { "name": "Tag", "value": "Skills" }
+      {
+        "name": "Category",
+        "value": "Agent"
+      },
+      {
+        "name": "Topic",
+        "value": "Learning"
+      },
+      {
+        "name": "Scenario",
+        "value": "Career Development"
+      },
+      {
+        "name": "Tag",
+        "value": "Skills"
+      }
     ],
     "thumbnails": [
       {

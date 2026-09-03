@@ -1,8 +1,8 @@
 [
   {
-    "name": "copilotprompts-m365-task-recovery-assistant",
+    "name": "copilotprompts-prompt-m365-task-recovery-assistant",
     "source": "pnp",
-    "title": "Task Recovery Assistant",   
+    "title": "Task Recovery Assistant",
     "shortDescription": "Quickly surface overdue, forgotten or unacknowledged tasks across Outlook, Teams, To Do and Planner, then prioritize and suggests next steps.",
     "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-task-recovery-assistant",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-task-recovery-assistant",
@@ -14,13 +14,12 @@
     "products": [
       "Microsoft 365 Copilot"
     ],
-    "metadata": [
-    ],
+    "metadata": [],
     "thumbnails": [
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-task-recovery-assistant/assets/demo2.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-task-recovery-assistant/assets/demo1.png",
         "alt": "Task recovery assistant"
       }
     ],

@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-code-review-csharp",
+    "name": "copilotprompts-skill-code-review-csharp",
     "source": "pnp",
     "title": "C# Code Review Skill for GitHub Copilot",
     "shortDescription": "A GitHub Copilot custom skill that performs structured code reviews of C# source code, checking naming conventions, performance, security, and .NET best practices.",
@@ -15,8 +15,14 @@
       "GitHub Copilot"
     ],
     "metadata": [],
-    "thumbnails": []
-   ,
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/images/ilovecopilot.png",
+        "alt": "C# Code Review Skill for GitHub Copilot preview"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "pnp",

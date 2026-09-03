@@ -1,10 +1,10 @@
 [
   {
-    "name": "copilotprompts-m365-outlook-calendar-analytics",
+    "name": "copilotprompts-prompt-m365-outlook-calendar-analytics",
     "source": "pnp",
     "title": "Outlook Calendar Meeting Analytics",
     "shortDescription": "Analyze monthly meeting time and generate a visual breakdown of calendar usage.",
-    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-outlook-calendar-analytics",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-outlook-calendar-analytics",
     "longDescription": [
       "This prompt reviews your Outlook calendar for the current month and summarizes total meeting time.",
       "It generates a clear graphical presentation showing total blocked time, organized meetings, accepted/tentative meetings, and meetings not yet responded to."
@@ -52,6 +52,7 @@
         "description": "Learn more about Microsoft 365 Copilot",
         "url": "https://www.microsoft.com/microsoft-365/copilot"
       }
-    ]
+    ],
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-outlook-calendar-analytics"
   }
 ]

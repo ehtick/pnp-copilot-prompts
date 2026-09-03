@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-weekly-pacing",
+    "name": "copilotprompts-skill-weekly-pacing",
     "source": "pnp",
     "title": "Weekly Pacing Skill for Cowork",
     "shortDescription": "A calm weekly pacing skill that classifies each day as Rest, Light, Focus, or Heavy using Work IQ signals.",
@@ -20,7 +20,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/blob/main/samples/skills/weekly-pacing/assets/demo.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/skills/weekly-pacing/assets/demo.png",
         "alt": "Weekly Pacing skill demo"
       }
     ],

@@ -1,10 +1,10 @@
 [
   {
-    "name": "copilotprompts-specific-news-research-agent",
+    "name": "copilotprompts-agent-specific-research-agent",
     "source": "pnp",
     "title": "Specific News research Agent",
     "shortDescription": "This prompt help users get latest news articles on a topic.",
-     "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/specific-research-agent",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/specific-research-agent",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/specific-research-agent",
     "longDescription": [
       "This prompt help users get latest news articles on a topic. The agent will ask the user to provide a specific topic and then search for the latest news articles related to that topic. The agent will also provide the user with a summary of the articles and any relevant links."
@@ -14,13 +14,12 @@
     "products": [
       "Copilot"
     ],
-    "metadata": [
-    ],
+    "metadata": [],
     "thumbnails": [
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/specific-research-agentt/assets/demo.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/specific-research-agent/assets/demo.png",
         "alt": "copilotprompts-specific-news-research-agent"
       }
     ],

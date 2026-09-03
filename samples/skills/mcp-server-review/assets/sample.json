@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-mcp-server-review",
+    "name": "copilotprompts-skill-mcp-server-review",
     "source": "pnp",
     "title": "MCP Server Review Skill for GitHub Copilot",
     "shortDescription": "A GitHub Copilot custom skill that reviews MCP servers for protocol compliance, obsolete features, missing requirements, and security issues.",

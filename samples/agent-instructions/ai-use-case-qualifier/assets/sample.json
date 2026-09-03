@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-ai-use-case-qualifier",
+    "name": "copilotprompts-agent-ai-use-case-qualifier",
     "source": "pnp",
     "title": "The Use Case Qualifier: qualify AI ideas before you build",
     "shortDescription": "A structured five-dimension qualification agent that scores AI use cases, recommends the right Microsoft platform, and produces a shareable Go/No-Go report.",

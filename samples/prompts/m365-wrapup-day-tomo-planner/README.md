@@ -72,4 +72,5 @@ If this sample needs improvements, open a GitHub issue in the repository and inc
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED.**
 
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-wrapup-day-tomo-planner)
+---
+![](https://m365-visitor-stats.azurewebsites.net/copilot-prompts/copilotprompts-prompt-m365-wrapup-day-tomo-planner)

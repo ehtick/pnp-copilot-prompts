@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-m365-summarise-email",
+    "name": "copilotprompts-prompt-m365-summarise-email",
     "source": "pnp",
     "title": "m365 Summarise Email",
     "shortDescription": "Ask copilot to summarise email",
@@ -14,8 +14,7 @@
     "products": [
       "Microsoft 365 Copilot"
     ],
-    "metadata": [
-    ],
+    "metadata": [],
     "thumbnails": [
       {
         "type": "image",

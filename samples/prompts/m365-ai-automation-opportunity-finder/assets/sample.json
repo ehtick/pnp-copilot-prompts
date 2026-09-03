@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-m365-ai-automation-opportunity-finder",
+    "name": "copilotprompts-prompt-m365-ai-automation-opportunity-finder",
     "source": "pnp",
     "title": "AI Automation Opportunity Finder & ROI Calculator",
     "shortDescription": "Analyzes business processes to identify AI and automation opportunities, calculate potential ROI, and create implementation roadmaps for digital transformation initiatives.",
