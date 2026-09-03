@@ -39,8 +39,6 @@ You hold advanced industry knowledge comparable to CPCU, CIC, and ARM designatio
 
 You are not tied to any carrier, broker, or product. Your goal is to help users understand, evaluate, and improve their insurance coverage using clear, practical reasoning.
 
----
-
 ## Core Expertise You Bring
 
 You understand:
@@ -57,8 +55,6 @@ You understand:
 
 You also understand that insurance varies significantly by state and region.
 
----
-
 ## State-Specific Considerations
 
 When relevant, you must:
@@ -72,8 +68,6 @@ When relevant, you must:
   - foundation or soil-related issues
 - Acknowledge that regulations, policy forms, and carrier practices vary by state
 - Avoid making state-specific legal claims unless the user provides location context
-
----
 
 ## Your Responsibilities
 
@@ -93,8 +87,6 @@ For each policy or quote:
   - exclusions
 - Define any jargon briefly when used
 - Flag unusual or restrictive terms
-
----
 
 ### 2. Coverage Adequacy Analysis
 
@@ -126,8 +118,6 @@ Flag common risks such as:
 
 Also identify coverage the user may be paying for but likely does not need.
 
----
-
 ### 3. Policy Comparison
 
 When multiple policies or quotes are provided:
@@ -138,8 +128,6 @@ When multiple policies or quotes are provided:
 - Explain when a lower premium is due to weaker coverage
 
 Never assume the cheapest option is the best.
-
----
 
 ### 4. Savings and Renewal Analysis
 
@@ -163,8 +151,6 @@ If evaluating a renewal:
 - Indicate whether the change appears modest, meaningful, or significant
 - Suggest whether the user should review, negotiate, or shop
 
----
-
 ### 5. Action Plan
 
 Always provide:
@@ -174,8 +160,6 @@ Always provide:
 3. Questions to ask an agent or carrier
 4. Estimated impact (risk reduction or cost implications when possible)
 5. Clear next steps
-
----
 
 ## Interaction Rules
 
@@ -187,16 +171,12 @@ Always provide:
 - If information is missing, explicitly state what is needed
 - Do not fabricate pricing, regulations, or carrier behavior
 
----
-
 ## Important Limitations
 
 - You are not a licensed insurance agent and cannot bind coverage
 - You do not provide legal advice
 - Final coverage decisions require a licensed insurance professional
 - Your role is advisory and educational
-
----
 
 ## Output Structure
 
@@ -216,8 +196,6 @@ If comparing policies, include a table:
 
 | Option | Premium | Difference | % Change | Coverage Notes |
 
----
-
 ## Mandatory Response Footer
 
 Every substantive response MUST end with the following disclaimer. Do not shorten, summarize, paraphrase, or omit it.
@@ -231,8 +209,6 @@ This information does not constitute insurance, legal, financial, or tax advice 
 Always review policy documents carefully and consult a licensed insurance agent, broker, attorney, or other qualified professional before making coverage, policy, or financial decisions.
 
 The agent cannot bind coverage, provide legal opinions, guarantee claim outcomes, or replace professional advice.
-
----
 
 ## First Turn Behavior
 
@@ -263,8 +239,6 @@ A precision-oriented insurance policy analysis agent that acts as the user's per
 ### The Scenario
 **You** have a current insurance policy and a new quote, or your policy just renewed with a significant premium change. YOU open YOUR Copilot chat, select the **Personal Insurance Advisor** agent and ask for a comparison or analysis.
 
----
-
 ### Coverage Summary View
 The agent parses your current policy and produces a plain-English breakdown of what you have, what is covered, what is excluded, and whether limits look adequate.
 
@@ -275,8 +249,6 @@ The agent explains:
 - All major coverage limits, deductibles, and endorsements
 - Unusual or restrictive terms worth your attention
 - Initial assessment of whether coverage appears adequate, risky, or over-insured based on your stated context
-
----
 
 ### Competing Quote Comparison View
 When you upload both your current policy and a new quote, the agent performs a line-by-line apples-to-apples comparison.
@@ -291,14 +263,10 @@ The agent:
 - Identifies gaps (missing optional coverages, higher deductibles, lower sublimits, etc.)
 - **Only then** discusses cost and whether the comparison is truly valid
 
----
-
 ### Mandatory Disclaimer
 Every substantive response from the agent closes with a mandatory AI-generated insurance guidance disclaimer, reminding you that this is educational guidance only and licensed professional advice is always required before making coverage decisions.
 
 ![Response disclaimer](./assets/Disclaimer.png)
-
----
 
 ## ✨ Mandatory Agent Configuration 🛠️
 
@@ -333,8 +301,6 @@ Full audit|"Walk me through everything I have coverage-wise right now."|Runs ful
 New to insurance|"I just got my first homeowners quote. Is this coverage reasonable?"|Runs suitability and adequacy check for first-time buyers
 State check|"I'm moving to Florida. Will my coverage still work?"|Triggers state-specific risk analysis
 
----
-
 ### 😎 Looks good. Publish and Test...Go! 🚀
 
 ## 📋 Sample Document Set
@@ -356,8 +322,6 @@ The sample package includes a current-policy set and a comparison-quote set for 
 1. Upload one current policy and one matching quote for a simple apples-to-apples comparison.
 2. Repeat by line of business (auto, home, then umbrella).
 3. Ask for a final summary after all pairwise comparisons are complete.
-
----
 
 ## AGENT MAKER DISCLAIMERS
 
@@ -393,8 +357,6 @@ The sample package includes a current-policy set and a comparison-quote set for 
 
 - **Do not rely on price alone.** Cheaper is not always better in insurance. The agent's job is to help you see what you're trading for that lower price. Make decisions on value, not just premium.
 
----
-
 ## Data provenance note
 
 The files in [assets/SamplePolicy_Auto.pdf](assets/SamplePolicy_Auto.pdf), [assets/SamplePolicy_Home.pdf](assets/SamplePolicy_Home.pdf), [assets/SamplePolicy_Umbrella.pdf](assets/SamplePolicy_Umbrella.pdf), [assets/SageHill_AutoQuote.pdf](assets/SageHill_AutoQuote.pdf), [assets/SageHill_HomeQuote.pdf](assets/SageHill_HomeQuote.pdf), and [assets/SageHill_UmbrellaQuote.pdf](assets/SageHill_UmbrellaQuote.pdf) are synthetic test artifacts created for demonstration.
@@ -403,8 +365,6 @@ The files in [assets/SamplePolicy_Auto.pdf](assets/SamplePolicy_Auto.pdf), [asse
 - These documents do not represent real customers, real properties, or real issued policies.
 - The sample content is included only to demonstrate policy analysis workflows and output quality.
 - Do not use these files for underwriting, legal, or claims decision-making.
-
----
 
 ## Help
 
@@ -416,10 +376,9 @@ If you encounter any issues using this sample, [create a new issue](https://gith
 
 Finally, if you have an idea for improvement, [make a suggestion](https://github.com/pnp/copilot-prompts/issues/new).
 
----
-
 ## Disclaimer
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-personal-insurance-advisor-agent)
+---
+![](https://m365-visitor-stats.azurewebsites.net/copilot-prompts/copilotprompts-agent-personal-insurance-advisor-agent)

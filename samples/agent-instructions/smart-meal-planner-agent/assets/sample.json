@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-smart-meal-planner-agent",
+    "name": "copilotprompts-agent-smart-meal-planner-agent",
     "source": "pnp",
     "title": "Smart Meal Planner Agent",
     "shortDescription": "An agent that creates practical meal plans based on available ingredients, dietary needs, schedules, and budget constraints.",

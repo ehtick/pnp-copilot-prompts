@@ -29,5 +29,4 @@ create prompt of the week from sample https://github.com/pnp/copilot-prompts/tre
 - [Copilot Cowork Skills Documentation](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/#skills)
 
 ---
-
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-prompt-of-the-week)
+![](https://m365-visitor-stats.azurewebsites.net/copilot-prompts/copilotprompts-skill-prompt-of-the-week)

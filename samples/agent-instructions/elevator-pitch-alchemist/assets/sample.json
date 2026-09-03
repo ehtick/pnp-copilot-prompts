@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-elevator-pitch-alchemist",
+    "name": "copilotprompts-agent-elevator-pitch-alchemist",
     "source": "pnp",
     "title": "Elevator-Pitch Alchemist",
     "shortDescription": "Turn any half-baked thought into a 90-second pitch that makes heads snap.",
@@ -14,14 +14,13 @@
     "products": [
       "Copilot"
     ],
-    "metadata": [
-    ],
+    "metadata": [],
     "thumbnails": [
       {
         "type": "image",
         "order": 100,
-        "url": "",
-        "alt": ""
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/images/ilovecopilot.png",
+        "alt": "Elevator-Pitch Alchemist preview"
       }
     ],
     "authors": [

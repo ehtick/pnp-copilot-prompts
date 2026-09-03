@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-smart-crop-doctor",
+    "name": "copilotprompts-agent-smart-crop-doctor",
     "source": "pnp",
     "title": "AgriGuard – Smart Crop Doctor",
     "shortDescription": "An agent designed to assist farmers, agronomists, and agricultural extension workers in diagnosing crop health issues",
@@ -14,14 +14,13 @@
     "products": [
       "Copilot"
     ],
-    "metadata": [
-    ],
+    "metadata": [],
     "thumbnails": [
       {
         "type": "image",
         "order": 100,
-        "url": "",
-        "alt": ""
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/images/ilovecopilot.png",
+        "alt": "AgriGuard – Smart Crop Doctor preview"
       }
     ],
     "authors": [

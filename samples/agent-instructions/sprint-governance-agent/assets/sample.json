@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-sprint-governance-agent",
+    "name": "copilotprompts-agent-sprint-governance-agent",
     "source": "pnp",
     "title": "SPRINT Governance Agent",
     "shortDescription": "Generate structured finance summaries and help users track expenses.",
@@ -18,7 +18,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/sprint-governance-agent/assets/AgentInstructions.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/sprint-governance-agent/assets/AgentInstructions.png",
         "alt": "copilotprompts-sprint-governance-agent"
       }
     ],
@@ -35,6 +35,7 @@
         "description": "Microsoft Copilot",
         "url": "https://copilot.microsoft.com/"
       }
-    ]
+    ],
+    "metadata": []
   }
 ]

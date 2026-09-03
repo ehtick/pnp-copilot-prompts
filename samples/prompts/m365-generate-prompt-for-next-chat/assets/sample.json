@@ -1,8 +1,8 @@
 [
   {
-    "name": "copilotprompts-m365-generate-prompt-for-next-chat",
+    "name": "copilotprompts-prompt-m365-generate-prompt-for-next-chat",
     "source": "pnp",
-    "title": "Generate a prompt to continue a chat",   
+    "title": "Generate a prompt to continue a chat",
     "shortDescription": "Continue a conversation with Microsoft 365 Copilot in a new chat.",
     "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-generate-prompt-for-next-chat",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-generate-prompt-for-next-chat",
@@ -14,8 +14,7 @@
     "products": [
       "Microsoft 365 Copilot"
     ],
-    "metadata": [
-    ],
+    "metadata": [],
     "thumbnails": [
       {
         "type": "image",

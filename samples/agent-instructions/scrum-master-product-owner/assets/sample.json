@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-scrum-master-product-owner",
+    "name": "copilotprompts-agent-scrum-master-product-owner",
     "source": "pnp",
     "title": "Scrum Master and Product Owner",
     "shortDescription": "An expert Product Owner and Scrum Master agent that reviews open issues, ranks them by priority, proposes labels, defines milestones, plans sprints, and generates an actionable backlog.",
@@ -15,7 +15,14 @@
       "Copilot"
     ],
     "metadata": [],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/images/ilovecopilot.png",
+        "alt": "Scrum Master and Product Owner preview"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "StfBauer",

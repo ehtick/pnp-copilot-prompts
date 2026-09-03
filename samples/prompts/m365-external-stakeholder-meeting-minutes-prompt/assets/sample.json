@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-m365-external-stakeholder-meeting-minutes-prompt",
+    "name": "copilotprompts-prompt-m365-external-stakeholder-meeting-minutes-prompt",
     "source": "pnp",
     "title": "Meeting Minutes with External Stakeholders",
     "shortDescription": "Generate minutes for meetings with external stakeholders in Teams",
@@ -15,7 +15,14 @@
       "Microsoft 365 Copilot"
     ],
     "metadata": [],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/images/ilovecopilot.png",
+        "alt": "Meeting Minutes with External Stakeholders preview"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "rogerscarias",

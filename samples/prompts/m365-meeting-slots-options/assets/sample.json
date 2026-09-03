@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-m365-meeting-slots-options",
+    "name": "copilotprompts-prompt-m365-meeting-slots-options",
     "source": "pnp",
     "title": "Generate meeting slot options based on calendar availability",
     "shortDescription": "Proposes available meeting slots for external teams with timezone conversion",

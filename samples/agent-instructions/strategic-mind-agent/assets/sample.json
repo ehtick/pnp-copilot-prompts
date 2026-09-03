@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-strategic-mind-agent",
+    "name": "copilotprompts-agent-strategic-mind-agent",
     "source": "pnp",
     "title": "Strategic Mind Agent",
     "shortDescription": "This prompt generates an agent to guide the user through five iterative rounds to develop a strategic mindset.",
@@ -14,13 +14,12 @@
     "products": [
       "Copilot"
     ],
-    "metadata": [
-    ],
+    "metadata": [],
     "thumbnails": [
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/strategic-mind-agent/assets/demo.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/strategic-mind-agent/assets/demo.png",
         "alt": "copilotprompts-strategic-mind-agent"
       }
     ],

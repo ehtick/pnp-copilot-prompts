@@ -2,7 +2,61 @@
 
 Audit date: 2026-09-02
 
-Status: planning baseline; no sample content or gallery implementation has been changed.
+Status: structural normalization completed on 2026-09-03; gallery implementation remains to be completed.
+
+## 0. Normalization update (2026-09-03)
+
+Completed across all 153 sample folders:
+
+- [x] Renamed every sample documentation file to exactly `README.md`.
+- [x] Ensured every sample has one canonical `assets/sample.json` with the required publishing field names.
+- [x] Moved the misplaced metadata for `m365-7-day-sent-review-and-remind-action` into `assets/sample.json`.
+- [x] Added metadata for `m365-change-impacts` and `m365-copilot-as-a-professional-executive-assistant`.
+- [x] Normalized sample IDs to `copilotprompts-prompt-{slug}`, `copilotprompts-agent-{slug}`, or `copilotprompts-skill-{slug}`.
+- [x] Ensured each README ends with exactly one matching, taxonomy-aware visitor tracker under `https://m365-visitor-stats.azurewebsites.net/copilot-prompts/`.
+- [x] Added gallery and README preview references for every sample.
+- [x] Referenced the shared `images/ilovecopilot.png` fallback for the 27 samples without contributed images; no fallback binaries were copied into sample folders.
+- [x] Added `scripts/normalize-samples.ps1` to check and repair these conventions for future contributions.
+
+Validation completed:
+
+- `./scripts/normalize-samples.ps1` is idempotent and validates all 153 folders.
+- All 153 metadata files parse as one-item arrays and pass required publishing-content checks.
+- All 153 taxonomy IDs are unique and match their README tracker.
+- Every sample has exactly one canonical README and `assets/sample.json`.
+
+### Website readiness snapshot
+
+Current assessment: **content ingestion ready; website implementation and deployment not started**.
+
+| Area | Status | Current evidence | What is still missing |
+| --- | --- | --- | --- |
+| Sample discovery and identity | Ready | 153 folders validate; all IDs are unique and type-aware | Keep the normalizer as a CI gate |
+| README and metadata paths | Ready | Every sample has `README.md` and canonical `assets/sample.json` | Verify paths on Ubuntu in CI |
+| Preview availability | Ready | 126 samples map to a local contributed image; 27 intentionally use the shared fallback; no primary preview is external | Require a sample-local static PNG for future contributions |
+| Visitor tracking | Ready | Every sample has one `/copilot-prompts/` tracker matching its metadata ID | Add this invariant to CI |
+| Required metadata content | Ready | All required scalar values, descriptions, products, authors, and image thumbnails pass the fresh audit | Add these checks to the repository-owned schema and CI |
+| Metadata schema | Blocked | The PowerShell normalizer checks the current structural contract | Add a versioned JSON Schema and schema tests |
+| Product/facet taxonomy | Deferred | Metadata contains 20 product labels; 142 samples have no facet entries | Do not normalize for the initial website; revisit only if advanced host/application/scenario filters are needed |
+| Catalog generator | Not started | No `site/`, package manifest, or generation script exists | Implement deterministic scanning, validation, Markdown rendering, and image handling |
+| Gallery interface | Not started | No frontend exists | Build catalog, filters, cards, detail pages, contributors, and guidance pages |
+| Automated quality | Blocked | Existing workflow only calls `pnp/pnp-sample-validation@main` | Add local validation, unit, browser, accessibility, link, and image checks |
+| GitHub Pages deployment | Not started | No Pages workflow or deployable artifact exists | Add build/deploy workflows and post-deployment verification |
+
+### Launch blockers
+
+The sample data is ready for website generation. The following repository and delivery work remains before the gallery is production-ready:
+
+1. **Contract:** confirm the brand-asset decision and add canonical README/metadata templates for future contributions.
+2. **Schema and CI:** add `.github/schemas/sample.schema.json`, run repository-owned validation on Ubuntu, add the normalizer in check mode to pull requests, and pin third-party actions to immutable commits.
+3. **Static site:** create the Astro project and generate all 153 type/slug detail routes, the catalog, sitemap, and public catalog JSON.
+4. **Experience:** implement search, type/contributor filters, sorting, sample cards, sanitized README detail pages, contributor pages, and source/download actions.
+5. **Quality gates:** add unit, Playwright, accessibility, responsive layout, internal link, outbound action, and image-decoding tests.
+6. **Deployment:** configure GitHub Pages for `/copilot-prompts`, deploy the tested artifact, and verify the live commit and catalog hash.
+
+Items 1-2 are the pre-site creation milestone. Product normalization and advanced host/application/scenario filtering are explicitly deferred and do not block frontend implementation or launch. Public deployment should require all 153 records to pass the same build used in CI.
+
+The original audit and remediation matrix below are retained as the baseline. Structural items fixed by this update are historical; product taxonomy is deferred, while unresolved content, schema-governance, and gallery-delivery items remain actionable.
 
 ## 1. Scope and audit method
 
@@ -26,73 +80,81 @@ The repository's current contribution guidance and scaffolding skills were treat
 
 ## 2. Executive summary
 
-| Measure | Result |
-| --- | ---: |
-| Total samples | 153 |
-| Prompt samples | 113 |
-| Agent instruction samples | 31 |
-| Skill samples | 9 |
-| Samples passing the proposed gallery-readiness profile | 23 |
-| Samples requiring one or more fixes | 130 |
-| Canonical `assets/sample.json` files | 150 |
-| Missing canonical `assets/sample.json` files | 3 |
-| Misplaced `sample.json` files | 1 |
+| Measure | Baseline | Current | Status |
+| --- | ---: | ---: | --- |
+| Total samples | 153 | 153 | Stable |
+| Prompt samples | 113 | 113 | Stable |
+| Agent instruction samples | 31 | 31 | Stable |
+| Skill samples | 9 | 9 | Stable |
+| Samples passing structural normalization | 23 | 153 | Resolved |
+| Samples requiring structural normalization | 130 | 0 | Resolved |
+| Canonical `assets/sample.json` files | 150 | 153 | Resolved |
+| Missing canonical `assets/sample.json` files | 3 | 0 | Resolved |
+| Misplaced `sample.json` files | 1 | 0 | Resolved |
 
-Pass/fail by type:
+Current structural pass status by type:
 
 | Type | Total | Pass | Needs work |
 | --- | ---: | ---: | ---: |
-| Prompts | 113 | 17 | 96 |
-| Agent instructions | 31 | 5 | 26 |
-| Skills | 9 | 1 | 8 |
+| Prompts | 113 | 113 | 0 |
+| Agent instructions | 31 | 31 | 0 |
+| Skills | 9 | 9 | 0 |
 
-The repository has enough metadata to support a generated gallery, but it is not ready for a strict all-samples build. The highest-value first step is to formalize one schema and validator, resolve the three missing canonical metadata files, make every sample provide a valid local preview, and normalize metadata identity and taxonomy. Gallery development can begin in parallel against a validated subset, but production deployment should not silently omit invalid samples.
+All samples can now be discovered and loaded through the normalized folder and metadata contract. The fresh rescan found no remaining required metadata, identity, path, date, tracker, author, or preview-integrity defects. Taxonomy facets remain largely unpopulated by design because that work is deferred.
 
 ## 3. Quality findings
 
 ### 3.1 Systemic issues
 
-| Finding | Affected samples | Priority | Why it matters |
-| --- | ---: | --- | --- |
-| README filename is not exactly `README.md` | 86 | P1 | The proposed Astro generator and Linux CI are case-sensitive; the local contribution guide explicitly requires this casing. |
-| No static PNG in `assets/` | 46 | P1 | `CONTRIBUTING.md` requires at least one static PNG even when a GIF is supplied. A stable still image is also needed for cards and social metadata. |
-| README does not reference an image | 43 | P1 | The contribution guide requires an in-README screenshot and users need visible evidence before opening or downloading a sample. |
-| No publishable image thumbnail | 29 | P0 | The gallery cannot create a card preview when `thumbnails` has no image with non-empty URL and alt text. |
-| No local image in canonical `assets/` | 28 | P0 | External or missing media makes the gallery nondeterministic and can produce broken cards. |
-| Product value outside the current canonical allowlist | 31 | P1 | Product filters would fragment into overlapping labels such as `Copilot for Microsoft 365`, `Outlook`, and `Cowork`. Host/app facets must be modeled separately. |
-| `name` does not equal `copilotprompts-{folder-name}` | 14 | P1 | This breaks stable identity, analytics naming, and deduplication. |
-| `url` does not match the owning sample folder | 6 | P0 | Source actions lead to the wrong location. |
-| `downloadUrl` is missing | 5 | P0 | Download actions cannot be rendered. |
-| `downloadUrl` does not target the owning sample | 6 | P0 | Download actions are missing or incorrect. |
-| Skill product is not exactly `GitHub Copilot` | 5 | P1 | This conflicts with the current skill contribution contract. Some newer Cowork-oriented skills reveal that the contract itself needs a product decision. |
-| `shortDescription` is empty | 4 | P0 | Cards and search results have no useful summary. |
-| Update date precedes creation date | 3 | P1 | Sorting and freshness labels become misleading. |
-| Canonical `assets/sample.json` is missing | 3 | P0 | The samples cannot enter a metadata-driven catalog. |
-| `sample.json` root is not a one-item array | 2 | P0 | This violates the established Solution Gallery document shape. |
-| Required `metadata` field is missing | 2 | P1 | The document is inconsistent with the current template and cannot carry future gallery facets. |
-| `source` is missing or not `pnp` | 2 | P1 | Publishing provenance is incomplete. |
-| Author entry is incomplete | 1 | P1 | Contributor attribution cannot be rendered reliably. |
+| Finding | Baseline | Current | Status | Notes |
+| --- | ---: | ---: | --- | --- |
+| README filename is not exactly `README.md` | 86 | 0 | Resolved | Case-only renames are recorded in Git for Linux compatibility. |
+| README does not reference an image | 43 | 0 | Resolved | READMEs use a contributed image or shared fallback. |
+| No image thumbnail | 29 | 0 | Resolved | Every sample has at least one usable gallery preview. |
+| No contributed image in the sample | 28 | 27 | Covered | These 27 intentionally use `images/ilovecopilot.png`; replacing it remains a quality improvement. |
+| No sample-local static PNG | 46 | 45 | Accepted legacy | Existing local JPEG/GIF/WebP previews remain valid and image-less samples use the shared PNG. New contributions must include a sample-local static PNG. |
+| Product taxonomy is inconsistent | 31 | 142 without gallery facets | Deferred | Keep current product labels for the initial website; revisit only if advanced filtering becomes a priority. |
+| Metadata `name` mismatch | 14 | 0 | Resolved | All names use the prompt/agent/skill taxonomy. |
+| Source `url` mismatch | 6 | 0 | Resolved | All source URLs match the owning folder. |
+| Missing or incorrect `downloadUrl` | 6 | 0 | Resolved | All download actions now target the owning folder. |
+| Skill product conflicts with current contract | 5 | 4 | Deferred | Keep current Cowork-oriented values unchanged for now. |
+| Empty `shortDescription` | 4 | 0 | Resolved | Every card has a short description. |
+| Empty `longDescription` | 2 | 0 | Resolved | Both descriptions were populated from their existing README summaries. |
+| Update date precedes creation date | 3 | 0 | Resolved | Date ordering is normalized. |
+| Canonical `assets/sample.json` is missing | 3 | 0 | Resolved | All 153 files exist in the canonical location. |
+| `sample.json` root is not a one-item array | 2 | 0 | Resolved | All 153 roots are one-item arrays. |
+| Required `metadata` field is missing | 2 | 0 | Resolved | All records contain the field; facet population remains open. |
+| `source` is missing or not `pnp` | 2 | 0 | Resolved | All records use `pnp`. |
+| Author entry is incomplete | 1 | 0 | Resolved | Corrected the author property in `agent-instructions/prompt-coach-supreme`. |
+| Image thumbnail entry is incomplete | 1 | 0 | Resolved | Added alt text to the supplementary `prompt-coach-supreme` image. |
+| Duplicate image thumbnail order | Not tracked | 0 | Resolved | Fresh rescan found and corrected two records with duplicate order `100`. |
 
-The missing canonical metadata files are:
+Resolved canonical metadata files:
 
 - `samples/prompts/m365-7-day-sent-review-and-remind-action/assets/sample.json`
 - `samples/prompts/m365-change-impacts/assets/sample.json`
 - `samples/prompts/m365-copilot-as-a-professional-executive-assistant/assets/sample.json`
 
-The misplaced file is:
+Resolved misplaced file:
 
 - `samples/prompts/m365-7-day-sent-review-and-remind-action/sample/sample.json`
 
 ### 3.2 Contract conflicts to resolve before enforcement
 
-- `CONTRIBUTING.md` says every README must be named exactly `README.md`, but its type table calls the agent file `readme.md`. The scaffolding skill for agent instructions also says `readme.md`. Standardize all types on `README.md`.
-- `CONTRIBUTING.md` requires every sample to include a screenshot and at least one static PNG. The agent scaffolding skill says screenshots are optional and permits an empty thumbnail. Make a local static gallery image mandatory for all three sample types.
-- The prompt scaffolding allowlist is `Microsoft 365 Copilot`, `Microsoft Copilot`, or `GitHub Copilot`; agent scaffolding uses `Copilot`; existing files also use application names and newer values such as `Cowork`. Define a small product taxonomy and store host/application distinctions as metadata facets.
-- Skill guidance requires `products: ["GitHub Copilot"]`, while several skills target Microsoft 365 Copilot Cowork. Decide whether `skills` is a cross-Copilot contribution type. If yes, update the guidance and schema rather than forcing inaccurate metadata.
-- `CONTRIBUTING.md` links to `samples/template/README-template.md`, but that template is absent. Add canonical README and `sample.json` templates for each contribution type or one shared template with explicit variants.
-- The current workflow delegates validation to the moving `pnp/pnp-sample-validation@main` reference and provides no repository-owned schema. Pin third-party actions to immutable commits and add a local schema/test command that produces reproducible results.
+- [x] Standardize all sample documentation filenames and scaffolding guidance on `README.md`.
+- [x] Establish `images/ilovecopilot.png` as the shared fallback rather than copying it into sample folders.
+- [x] Allow supported sample-specific image formats for existing samples, use the shared fallback only when no image exists, and require a local static PNG for new contributions.
+- Deferred: define a controlled product taxonomy and store host/application distinctions as metadata facets.
+- Deferred: decide whether skills are cross-Copilot contributions and resolve the four Cowork-oriented product conflicts.
+- [ ] Add the missing canonical README and `sample.json` templates referenced by contribution guidance.
+- [ ] Pin `pnp/pnp-sample-validation` to an immutable commit and add a repository-owned schema/test command.
 
 ### 3.3 Issue code legend
+
+The legend and matrix below are retained as the **2026-09-02 baseline audit**, not as the live status tracker. Use sections 2, 3.1, and the delivery phases for current status.
+
+<details>
+<summary>Archived baseline issue codes and per-sample remediation matrix</summary>
 
 | Code | Required remediation |
 | --- | --- |
@@ -105,7 +167,7 @@ The misplaced file is:
 | `JSON_ROOT` | Wrap the single metadata object in a one-item JSON array. |
 | `FIELD_*` | Add the named required field. |
 | `EMPTY_*` | Supply a non-empty value for the named field. |
-| `NAME` | Set `name` to `copilotprompts-{exact-folder-name}`. |
+| `NAME` | Set `name` to `copilotprompts-{prompt|agent|skill}-{exact-folder-name}`. |
 | `SOURCE` | Set `source` to `pnp`. |
 | `URL` | Point `url` to the exact GitHub sample folder. |
 | `DOWNLOAD_URL` | Point `downloadUrl` to the partial-download URL for the exact sample folder. |
@@ -259,6 +321,8 @@ Each unchecked row failed at least one gallery-readiness check. Samples not list
 - [ ] `skills/self-awareness-review` - `SKILL_PRODUCT`
 - [ ] `skills/weekly-pacing` - `PRODUCT_TAXONOMY`, `SKILL_PRODUCT`
 
+</details>
+
 ## 4. Sister site analysis
 
 Reference implementation: `https://github.com/pnp/spfx-copilot-components` and `https://pnp.github.io/spfx-copilot-components/`.
@@ -292,6 +356,8 @@ Important behavior to preserve:
 - no runtime API or database dependency
 
 ### 4.2 Changes needed for this repository
+
+> **Deferred for the initial website:** the proposed `copilotHost`, `applications`, and `scenario` taxonomy below is design reference only and is not a launch requirement.
 
 The sister repository has a single sample collection. This repository has three types and possible duplicate slugs, so identity and routing must use both type and slug:
 
@@ -345,11 +411,10 @@ Suggested first viewport:
 
 ### Catalog controls
 
+Initial launch scope includes search, type, contributor, and sort controls. Copilot host, application, and scenario filters are deferred with the taxonomy work.
+
 - Search
 - Type segmented control: All, Prompts, Agent instructions, Skills
-- Copilot host filter
-- Application filter when applicable
-- Scenario filter
 - Contributor filter
 - Sort: Recently updated, Newest, Title
 - Clear-all control and visible result count
@@ -436,6 +501,8 @@ Generated files and previews must be reproducible and either rebuilt in CI or ex
 
 ## 7. Metadata contract proposal
 
+> **Deferred for the initial website:** controlled taxonomy facets may be added later without blocking the baseline catalog.
+
 Keep the established one-item array and existing Solution Gallery fields for compatibility. Add controlled facets through the existing `metadata` array.
 
 Required top-level fields:
@@ -469,7 +536,7 @@ Rules:
 - `APPLICATIONS` is optional and must not be overloaded into `products`.
 - Every thumbnail image needs unique `order`, a descriptive `alt`, a raw GitHub URL for the owning file, and a matching decodable local image.
 - The lowest-order image is the card and social preview.
-- At least one thumbnail must be a static PNG. GIF/video media is supplementary.
+- New contributions must provide at least one sample-local static PNG. Existing samples may retain another supported local image format, and existing image-less samples use the shared PNG fallback.
 - `name`, `url`, and `downloadUrl` are validated against the actual type and folder, not only against regular-expression shapes.
 - Author GitHub accounts are compared case-insensitively for contributor aggregation.
 
@@ -477,8 +544,10 @@ Rules:
 
 ### Phase 0: Agree the contract
 
-- [ ] Resolve README casing, screenshot requirement, agent product naming, and Cowork skill policy conflicts.
-- [ ] Approve the host, application, and scenario taxonomies.
+- [x] Resolve README casing and establish the shared fallback preview policy.
+- [x] Accept existing supported image formats while requiring a sample-local static PNG for future contributions.
+- Deferred: resolve agent product naming and the Cowork skill policy.
+- Deferred: approve the host, application, and scenario taxonomies.
 - [ ] Decide whether all legacy samples must pass before first public deployment or whether a dated, visible migration status is acceptable.
 - [ ] Confirm legal/brand reuse of the sister site's background and Copilot assets.
 
@@ -489,7 +558,7 @@ Gate: one written schema and contribution contract has no conflicting instructio
 - [ ] Add `.github/schemas/sample.schema.json` with conditional rules where practical.
 - [ ] Add a Node validator that scans all three sample roots and checks identity, URLs, date order, local files, image decoding/dimensions, thumbnail order, alt text, and README image references.
 - [ ] Emit both human-readable errors and a JSON audit artifact.
-- [ ] Add unit tests for valid documents, malformed roots, path traversal, encoded filenames, duplicate slugs across types, and legacy product aliases.
+- [ ] Add unit tests for valid documents, malformed roots, path traversal, encoded filenames, and duplicate slugs across types.
 - [ ] Pin third-party actions to immutable commit SHAs.
 - [ ] Run validation on pull requests and prevent new debt immediately.
 
@@ -497,23 +566,31 @@ Gate: the validator reproduces this audit and gives contributors exact file-leve
 
 ### Phase 2: Repair P0 publication blockers
 
-- [ ] Add or move the three missing canonical metadata files.
-- [ ] Fix the two non-array documents.
-- [ ] Add all missing required metadata fields and non-empty descriptions.
-- [ ] Correct source/download URLs and metadata names.
-- [ ] Add a local, publishable thumbnail for every sample currently lacking one.
-- [ ] Correct incomplete author metadata.
+- [x] Add or move the three missing canonical metadata files.
+- [x] Fix the two non-array documents.
+- [x] Add all missing required metadata fields and non-empty short descriptions.
+- [x] Add non-empty long descriptions to `m365-detect-hidden-automation-business` and `m365-email-ranking`.
+- [x] Correct source/download URLs and metadata names.
+- [x] Add a publishable thumbnail for every sample, using the shared fallback where needed.
+- [x] Complete the legacy image thumbnail entry in `agent-instructions/prompt-coach-supreme`.
+- [x] Correct the incomplete author metadata in `agent-instructions/prompt-coach-supreme`.
+- [x] Resolve duplicate thumbnail order values in `m365-copilot-compare-proposals-on-defined-criteria` and `m365-latest-10-announcements-from-m365-message-center`.
 
-Gate: all 153 samples can be loaded into a generated catalog without exclusions or broken actions.
+Gate: complete. All 153 samples pass required publishing-content checks and can be discovered and parsed without exclusions.
 
 ### Phase 3: Normalize assets and documentation
 
-- [ ] Rename all case-variant READMEs to `README.md`.
-- [ ] Add a representative static PNG to every sample that lacks one.
-- [ ] Reference a local image in every README.
-- [ ] Normalize thumbnail URLs, order values, and alt text.
-- [ ] Add canonical templates and update all three scaffolding skills to produce the same contract.
-- [ ] Update `README.md` and `CONTRIBUTING.md` after the contract is settled.
+- [x] Rename all case-variant READMEs to `README.md` and record the case-only renames in Git.
+- [x] Provide a preview for every sample through a contributed image or the shared repository fallback.
+- [x] Map all 126 samples with contributed media to sample-specific primary previews, including the 18 legacy samples without PNG files.
+- Optional improvement: replace the shared fallback in the 27 image-less legacy samples when maintainers provide representative screenshots.
+- [x] Reference a contributed image or the shared fallback in every README.
+- [x] Normalize primary thumbnail URLs to sample-local images or the shared fallback.
+- [x] Resolve incomplete legacy thumbnail entries and validate unique order values and alt text.
+- [ ] Add canonical README and metadata templates.
+- [x] Update all three scaffolding skills to produce taxonomy-aware IDs and `/copilot-prompts/` trackers.
+- [x] Update `CONTRIBUTING.md` with README casing, fallback preview, identity, and tracker rules.
+- [ ] Update the repository `README.md` with gallery build and local-development instructions after the site exists.
 
 Gate: every sample meets the baseline structure and image requirements on Windows and Linux.
 
@@ -531,7 +608,8 @@ Gate: a deterministic production build creates 153 detail pages, optimized previ
 
 - [ ] Implement the family header/background assets with documented provenance.
 - [ ] Implement the distinct Copilot Prompt Gallery identity and type markers.
-- [ ] Build catalog search, type/host/application/scenario/contributor filters, sorting, result count, and empty state.
+- [ ] Build catalog search, type/contributor filters, sorting, result count, and empty state.
+- Deferred: add host/application/scenario filters after a controlled taxonomy is approved.
 - [ ] Build sample cards, type-aware details, media galleries, source/download actions, and README rendering.
 - [ ] Build getting-started, contributors, and contributing pages.
 - [ ] Add canonical, Open Graph, Twitter card, favicon, sitemap, and structured metadata.
@@ -541,7 +619,7 @@ Gate: the first screen is the usable gallery, works at mobile and desktop widths
 
 ### Phase 6: Test and deploy
 
-- [ ] Unit-test schema normalization, taxonomy mapping, routing, link rewriting, preview selection, and contributor aggregation.
+- [ ] Unit-test schema normalization, routing, link rewriting, preview selection, and contributor aggregation.
 - [ ] Browser-test search/filter query strings, sorting, detail navigation, back navigation, keyboard operation, mobile navigation, theme persistence, and zero-result recovery.
 - [ ] Run Axe checks on catalog, detail, contributors, and contributing pages.
 - [ ] Check image decoding and nonblank previews across representative desktop/mobile viewports.
@@ -563,10 +641,11 @@ Gate: a new compliant sample is validated, indexed, previewed, and deployed with
 
 ## 9. Recommended sequencing
 
-1. Approve the metadata/taxonomy decisions in Phase 0.
-2. Implement the local validator and schema before bulk editing samples.
-3. Fix P0 metadata and image blockers in small, reviewable batches by contribution type.
-4. Begin the Astro port once a representative set from all three types passes.
-5. Make all-sample validity a production deployment gate before announcing the gallery.
+1. Resolve the screenshot wording and brand decisions in Phase 0; taxonomy and Cowork policy remain deferred.
+2. Add the JSON Schema, repository-owned validator tests, and pull-request CI while retaining `scripts/normalize-samples.ps1` as the repair command.
+3. Add canonical README and metadata templates that match the schema and updated scaffolders.
+4. Scaffold the Astro site and deterministic catalog generator against all 153 normalized samples without requiring taxonomy facets.
+5. Build and browser-test the catalog and detail experience, then add the least-privilege Pages deployment workflow.
+6. Make schema validity, 153 generated detail pages, zero excluded records, accessibility, and post-deployment verification production launch gates.
 
 This sequencing keeps the gallery generator honest: contribution quality is the source of truth, and the site is a deterministic presentation of that source rather than a second hand-maintained catalog.

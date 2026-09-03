@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-m365-tenant-compliance-and-security-summary-report",
+    "name": "copilotprompts-prompt-m365-tenant-compliance-and-security-summary-report",
     "source": "pnp",
     "title": "Tenant Compliance & Security Summary Report for Microsoft 365",
     "shortDescription": "A comprehensive overview of the Microsoft 365 tenant's compliance and security posture, summarizing retention policies, sensitivity labels, and DLP policies.",
@@ -26,6 +26,12 @@
       }
     ],
     "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/images/ilovecopilot.png",
+        "alt": "Tenant Compliance & Security Summary Report for Microsoft 365 preview"
+      }
     ],
     "authors": [
       {

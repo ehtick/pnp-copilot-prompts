@@ -1,8 +1,8 @@
 [
   {
-    "name": "copilotprompts-m365-relationship-investment-scorecard",
+    "name": "copilotprompts-prompt-m365-relationship-investment-scorecard",
     "source": "pnp",
-    "title": "Relationship Investment Scorecard",   
+    "title": "Relationship Investment Scorecard",
     "shortDescription": "Analyze Outlook and Teams activity to identify your strongest and weakest professional connections, then get actionable steps to strengthen key relationships.",
     "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-relationship-investment-scorecard",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-relationship-investment-scorecard",
@@ -14,8 +14,7 @@
     "products": [
       "Microsoft 365 Copilot"
     ],
-    "metadata": [
-    ],
+    "metadata": [],
     "thumbnails": [
       {
         "type": "image",

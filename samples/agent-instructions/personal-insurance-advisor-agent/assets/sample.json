@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-personal-insurance-advisor-agent",
+    "name": "copilotprompts-agent-personal-insurance-advisor-agent",
     "source": "pnp",
     "title": "Personal Insurance Advisor Agent",
     "shortDescription": "An Agent Builder prompt for checking whether users are properly covered and whether insurance quotes are truly apples-to-apples before comparing cost.",
@@ -19,7 +19,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/personal-insurance-advisor-agent/assets/logo.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/personal-insurance-advisor-agent/assets/CompetingBid.png",
         "alt": "Personal Insurance Advisor Agent logo."
       },
       {

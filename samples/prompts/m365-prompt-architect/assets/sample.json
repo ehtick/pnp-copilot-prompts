@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-m365-prompt-architect",
+    "name": "copilotprompts-prompt-m365-prompt-architect",
     "source": "pnp",
     "title": "Prompt Architect - Craft, Test & Refine AI Prompts",
     "shortDescription": "A guided meta-prompt that helps you design, test, and refine effective prompts for Copilot and AI assistants.",
@@ -16,7 +16,13 @@
     ],
     "metadata": [],
     "thumbnails": [
-     ],
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/images/ilovecopilot.png",
+        "alt": "Prompt Architect - Craft, Test & Refine AI Prompts preview"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "OwnOptic",

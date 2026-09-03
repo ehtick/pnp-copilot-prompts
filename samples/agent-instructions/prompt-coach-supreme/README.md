@@ -173,8 +173,6 @@ Format the output as:
 
 **Why this works:** The prompt is specific about what you want (themes, frequency, sentiment), how to order it, and the exact output format. Chat will follow the structure consistently, and you can reuse this prompt for different batches of feedback.
 
----  
-
 ![Prompt Coach SUPREME](./assets/prompt-coach-supreme-2.png)  
 
 ### Example 2: Multi-Stage Project with Cost Estimation
@@ -234,8 +232,6 @@ Tone: Professional, confident, concise.
 
 **Why this works:** You keep research and drafting cheap (non-metered) but invest the credits where they matter most—in the reasoning and synthesis step. The staged outputs mean each step has the context it needs, and you're not re-explaining the problem three times.
 
----
-
 ### Example 3: Prompt Improvement
 
 **You:** "Here's a prompt I'm using. It works, but it feels inefficient. Can you improve it?
@@ -257,8 +253,6 @@ What can improve:
 ```
 
 This tighter version should be 20–30% faster and cheaper in a metered experience while producing the same quality output."
-
----
 
 ## ✨ Mandatory Agent Configuration
 
@@ -288,8 +282,6 @@ This tighter version should be 20–30% faster and cheaper in a metered experien
 | Plan Multi-Stage Work | Break this large project into stages across the best Copilot tools, then write the prompt for each stage. |
 | Fix Prompt + Experience | "What model should I use for [task]?" |
 
----
-
 ## AGENT MAKER DISCLAIMERS
 
 ### Limitations
@@ -317,8 +309,6 @@ This tighter version should be 20–30% faster and cheaper in a metered experien
 |---------|------|----------|
 | 1.0 | 2026-07-10 | Initial release - Prompt Coach SUPREME agent |
 
----
-
 ## Help
 
 We do not support samples, but this community is always willing to help. If you encounter any issues using this sample, [create a new issue](https://github.com/pnp/copilot-prompts/issues/new).
@@ -329,4 +319,5 @@ If you have ideas for improvement, [make a suggestion](https://github.com/pnp/co
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-prompt-coach-supreme)
+---
+![](https://m365-visitor-stats.azurewebsites.net/copilot-prompts/copilotprompts-agent-prompt-coach-supreme)

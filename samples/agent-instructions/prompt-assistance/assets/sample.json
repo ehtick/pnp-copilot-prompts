@@ -1,11 +1,11 @@
 [
   {
-    "name": "copilotprompts-prompt-assistant",
+    "name": "copilotprompts-agent-prompt-assistance",
     "source": "pnp",
     "title": "Promptly - helping you craft better AI prompts with clear guidance",
     "shortDescription": "An AI training assistant designed to help users craft effective and engaging prompts for AI systems.",
-    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/prompt-assistant",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/prompt-assistant",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/prompt-assistance",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/prompt-assistance",
     "longDescription": [
       "This AI training assistant provides users with clear guidance and best practices for crafting effective prompts for AI systems. By leveraging Microsoft's Responsible AI principles, it aims to promote inclusiveness, fairness, and safety in AI interactions."
     ],
@@ -14,14 +14,13 @@
     "products": [
       "Copilot"
     ],
-    "metadata": [
-    ],
+    "metadata": [],
     "thumbnails": [
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompt-assistant/assets/demo.png",
-          "alt": "Promptly"
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/prompt-assistance/assets/demo.png",
+        "alt": "Promptly"
       }
     ],
     "authors": [

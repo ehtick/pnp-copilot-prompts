@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-m365-promptcoach-cowork-task-and-estimate",
+    "name": "copilotprompts-prompt-m365-promptcoach-cowork-task-and-estimate",
     "source": "pnp",
     "title": "Prompt Coach: Cowork Task Plan & Approx Estimate",
     "shortDescription": "A meta-prompt that generates optimized Copilot Cowork plans and estimates weekly Copilot Credit consumption.",

@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-customer-comments-agent",
+    "name": "copilotprompts-agent-customer-comments-agent",
     "source": "pnp",
     "title": "Customer Comments Agent",
     "shortDescription": "An agent designed to assist in managing customer comments about services at provided facilities by analyzing form submissions and drafting responses based on complaint handling guidelines.",
@@ -14,8 +14,7 @@
     "products": [
       "Copilot"
     ],
-    "metadata": [
-    ],
+    "metadata": [],
     "thumbnails": [
       {
         "type": "image",

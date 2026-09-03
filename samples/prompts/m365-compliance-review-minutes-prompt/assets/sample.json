@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-m365-compliance-review-minutes-prompt",
+    "name": "copilotprompts-prompt-m365-compliance-review-minutes-prompt",
     "source": "pnp",
     "title": "Internal Control and Compliance Review Minutes",
     "shortDescription": "Generate internal control and compliance review minutes in Teams",
@@ -15,7 +15,14 @@
       "Microsoft 365 Copilot"
     ],
     "metadata": [],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/images/ilovecopilot.png",
+        "alt": "Internal Control and Compliance Review Minutes preview"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "rogerscarias",

@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-m365-actionable-meeting-summary",
+    "name": "copilotprompts-prompt-m365-actionable-meeting-summary",
     "source": "pnp",
     "title": "Draft Actionable Tasks from Meeting Summary",
     "shortDescription": "Drafts planner tasks and meeting summary from email",
@@ -26,7 +26,7 @@
     "authors": [
       {
         "gitHubAccount": "script32",
-        "pictureUrl": "https://avatars.githubusercontent.com/u/11950749?s=40&v=4", 
+        "pictureUrl": "https://avatars.githubusercontent.com/u/11950749?s=40&v=4",
         "name": "Cristian Rodriguez"
       }
     ],

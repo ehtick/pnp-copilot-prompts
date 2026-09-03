@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-self-awareness-review",
+    "name": "copilotprompts-skill-self-awareness-review",
     "source": "pnp",
     "title": "Self-Awareness Review for Microsoft 365 Copilot Cowork",
     "shortDescription": "Private self-reflection coaching that reviews your own Teams meetings, chats, and sent emails to surface moments where you may have misread social signals or come across as passive-aggressive, curt, or dismissive.",

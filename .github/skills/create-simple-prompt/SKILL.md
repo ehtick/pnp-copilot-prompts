@@ -110,14 +110,14 @@ Finally, if you have an idea for improvement, [make a suggestion](https://github
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-{folder-name})
+![](https://m365-visitor-stats.azurewebsites.net/copilot-prompts/copilotprompts-prompt-{folder-name})
 ```
 
 **README rules:**
 - **NEVER rephrase, rewrite, or modify the user's prompt text.** Copy the prompt exactly as provided by the user — word for word, character for character. The user's original wording is the contribution; do not "improve", shorten, expand, or restructure it.
 - The file MUST be named `README.md` (capital letters)
 - Always include a screenshot reference at the top (use `./assets/demo.png` as placeholder)
-- The tracking image at the bottom MUST follow the pattern: `https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-{folder-name}`
+- The tracking image at the bottom MUST follow the pattern: `https://m365-visitor-stats.azurewebsites.net/copilot-prompts/copilotprompts-prompt-{folder-name}`
 - Include the Help and Disclaimer sections exactly as shown
 - Use the current date for the version history in `{Month DD, YYYY}` format
 - Always fill in the `issues?q=label` URL with the actual folder name
@@ -143,7 +143,7 @@ Create `samples/prompts/{folder-name}/assets/sample.json`:
 ```json
 [
   {
-    "name": "copilotprompts-{folder-name}",
+    "name": "copilotprompts-prompt-{folder-name}",
     "source": "pnp",
     "title": "{Prompt Title}",
     "shortDescription": "{Short description of what the prompt does}",
@@ -185,7 +185,7 @@ Create `samples/prompts/{folder-name}/assets/sample.json`:
 ```
 
 **Key metadata rules:**
-- `name`: Always `copilotprompts-{folder-name}` (matches the tracking image ID)
+- `name`: Always `copilotprompts-prompt-{folder-name}` (matches the tracking image ID)
 - `shortDescription` and `longDescription[0]`: Should describe the same thing; `longDescription` can be more detailed
 - `creationDateTime` and `updateDateTime`: Use `YYYY-MM-DD` format with the current date
 - `products`: Must be one of: `"Microsoft 365 Copilot"`, `"Microsoft Copilot"`, `"GitHub Copilot"`
@@ -240,10 +240,10 @@ Before finalizing, verify:
 - [ ] `README.md` exists with correct capitalization
 - [ ] `assets/` folder exists
 - [ ] `assets/sample.json` exists with valid JSON
-- [ ] `sample.json` `name` field matches pattern `copilotprompts-{folder-name}`
+- [ ] `sample.json` `name` field matches pattern `copilotprompts-prompt-{folder-name}`
 - [ ] `sample.json` dates are in `YYYY-MM-DD` format
 - [ ] `sample.json` URLs use the correct folder name
-- [ ] README tracking image URL matches `copilotprompts-{folder-name}`
+- [ ] README tracking image URL matches `copilotprompts-prompt-{folder-name}`
 - [ ] README contains Help and Disclaimer sections
 - [ ] README has at least one screenshot reference
 - [ ] Author information is filled in

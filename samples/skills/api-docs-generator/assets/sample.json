@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-api-docs-generator",
+    "name": "copilotprompts-skill-api-docs-generator",
     "source": "pnp",
     "title": "API Documentation Generator Skill for GitHub Copilot",
     "shortDescription": "A GitHub Copilot custom skill that generates structured API reference documentation from source code or OpenAPI specifications.",
@@ -15,7 +15,14 @@
       "GitHub Copilot"
     ],
     "metadata": [],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/images/ilovecopilot.png",
+        "alt": "API Documentation Generator Skill for GitHub Copilot preview"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "pnp",

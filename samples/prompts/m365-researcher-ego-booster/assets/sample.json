@@ -1,8 +1,8 @@
 [
   {
-    "name": "copilotprompts-m365-researcher-ego-booster",
+    "name": "copilotprompts-prompt-m365-researcher-ego-booster",
     "source": "pnp",
-    "title": "Generate a personal work history report",   
+    "title": "Generate a personal work history report",
     "shortDescription": "Use the Researcher agent to create a comprehensive work history report.",
     "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-researcher-ego-booster",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-researcher-ego-booster",
@@ -15,8 +15,7 @@
       "Microsoft 365 Copilot",
       "Copilot Researcher agent"
     ],
-    "metadata": [
-    ],
+    "metadata": [],
     "thumbnails": [
       {
         "type": "image",

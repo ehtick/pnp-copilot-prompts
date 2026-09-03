@@ -41,8 +41,6 @@ Version|Date|Comments
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
----
-
 ## Help
 
 We do not support samples, but this community is always willing to help, and we want to improve these samples. We use GitHub to track issues, which makes it easy for community members to volunteer their time and help resolve issues.
@@ -53,6 +51,5 @@ For questions regarding this sample, [create a new question](https://github.com/
 
 Finally, if you have an idea for improvement, [make a suggestion](https://github.com/pnp/copilot-prompts/discussions).
 
-<img src="https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-outlook-thread-summary" />
-
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-outlook-calendar-analytics)
+---
+![](https://m365-visitor-stats.azurewebsites.net/copilot-prompts/copilotprompts-prompt-m365-outlook-calendar-analytics)

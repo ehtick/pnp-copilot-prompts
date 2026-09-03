@@ -1,23 +1,26 @@
 [
   {
-    "name": "copilotprompts-prompt-of-the-week",
-    "source": "custom",
+    "name": "copilotprompts-skill-prompt-of-the-week",
+    "source": "pnp",
     "title": "Prompt of the Week Skill",
     "shortDescription": "A Cowork skill that provides a curated 'Prompt of the Week' for inspiration and productivity.",
-   "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/skills/prompt-of-the-week",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/skills/prompt-of-the-week",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/skills/prompt-of-the-week",
-     "longDescription": [
+    "longDescription": [
       "This skill delivers a weekly prompt designed to spark creativity, learning, or productivity within your team. Each week, a new prompt is featured, encouraging users to explore new ideas, reflect, or take action. Ideal for teams looking to foster engagement and continuous improvement using Microsoft Copilot Cowork."
     ],
     "creationDateTime": "2026-05-18",
     "updateDateTime": "2026-05-18",
-    "products": ["Microsoft Copilot", "Cowork"],
+    "products": [
+      "Microsoft Copilot",
+      "Cowork"
+    ],
     "metadata": [],
     "thumbnails": [
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/blob/main/samples/skills/prompt-of-the-week/assets/demo.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/skills/prompt-of-the-week/assets/demo.png",
         "alt": "Prompt of the Week skill demo"
       }
     ],

@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-childrens-book-recommender",
+    "name": "copilotprompts-agent-childrens-book-recommender",
     "source": "pnp",
     "title": "AI Children's Book Reading Enthusiast and Recommender",
     "shortDescription": "A warm teaching assistant that recommends Newbery Medal-winning children's books daily",
@@ -22,7 +22,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/childrens-book-recommender/assets/demo.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/childrens-book-recommender/assets/demo.png",
         "alt": "copilotprompts-childrens-book-recommender"
       }
     ],

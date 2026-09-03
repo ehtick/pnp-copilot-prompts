@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-soulspace-agent",
+    "name": "copilotprompts-agent-soulspace-agent",
     "source": "pnp",
     "title": "Soulspace: AI Instructions for Calm, Clarity, and Care",
     "shortDescription": "Mental wellness assistant for calm, clarity, and emotional care",
@@ -24,8 +24,8 @@
       {
         "type": "image",
         "order": 100,
-        "url": "",
-        "alt": "copilotprompts-soulspace-agent"
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/images/ilovecopilot.png",
+        "alt": "Soulspace: AI Instructions for Calm, Clarity, and Care preview"
       }
     ],
     "authors": [

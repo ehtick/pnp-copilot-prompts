@@ -56,5 +56,4 @@ Run this analysis on the following information:
 | m365-change-impacts | Delia Zuniga |
 
 ---
-
-<img src="https://m365-visitor-stats.azurewebsites.net/SamplesGallery/pnp-copilot-prompt-m365-change-impacts" />
+![](https://m365-visitor-stats.azurewebsites.net/copilot-prompts/copilotprompts-prompt-m365-change-impacts)

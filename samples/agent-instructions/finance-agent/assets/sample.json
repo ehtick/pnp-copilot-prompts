@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-finance-agent",
+    "name": "copilotprompts-agent-finance-agent",
     "source": "pnp",
     "title": "Finance Agent",
     "shortDescription": "Generate structured finance summaries and help users track expenses.",
@@ -18,7 +18,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/finance-agent/assets/AgentInstructions.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/finance-agent/assets/AgentInstructions.png",
         "alt": "copilotprompts-finance-agent"
       }
     ],
@@ -35,6 +35,7 @@
         "description": "Microsoft Copilot",
         "url": "https://copilot.microsoft.com/"
       }
-    ]
+    ],
+    "metadata": []
   }
 ]

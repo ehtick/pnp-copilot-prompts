@@ -197,13 +197,13 @@ Finally, if you have an idea for improvement, [make a suggestion](https://github
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-{skill-name})
+![](https://m365-visitor-stats.azurewebsites.net/copilot-prompts/copilotprompts-skill-{skill-name})
 ```
 
 **README rules:**
 - The file MUST be named `README.md` (capital letters)
 - Always include a screenshot reference at the top (use `./assets/demo.png` as placeholder)
-- The tracking image at the bottom MUST follow the pattern: `https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-{skill-name}`
+- The tracking image at the bottom MUST follow the pattern: `https://m365-visitor-stats.azurewebsites.net/copilot-prompts/copilotprompts-skill-{skill-name}`
 - Include the Help and Disclaimer sections exactly as shown
 - Use the current date for the version history in `{Month DD, YYYY}` format
 - Prerequisites always include GitHub Copilot and VS Code
@@ -216,7 +216,7 @@ Create `samples/skills/{skill-name}/assets/sample.json`:
 ```json
 [
   {
-    "name": "copilotprompts-{skill-name}",
+    "name": "copilotprompts-skill-{skill-name}",
     "source": "pnp",
     "title": "{Skill Title} for GitHub Copilot",
     "shortDescription": "{Short description of what the skill does}",
@@ -258,7 +258,7 @@ Create `samples/skills/{skill-name}/assets/sample.json`:
 ```
 
 **Key metadata rules:**
-- `name`: Always `copilotprompts-{skill-name}` (matches the tracking image ID)
+- `name`: Always `copilotprompts-skill-{skill-name}` (matches the tracking image ID)
 - `products`: Always `["GitHub Copilot"]` for skill samples
 - `source`: Always `"pnp"`
 - `url`: Points to `samples/skills/{skill-name}` on GitHub main branch
@@ -286,11 +286,11 @@ Before finalizing, verify:
 - [ ] `README.md` explains how to install the skill (copy to `.github/skills/`)
 - [ ] `assets/` folder exists
 - [ ] `assets/sample.json` exists with valid JSON
-- [ ] `sample.json` `name` field matches pattern `copilotprompts-{skill-name}`
+- [ ] `sample.json` `name` field matches pattern `copilotprompts-skill-{skill-name}`
 - [ ] `sample.json` `products` is `["GitHub Copilot"]`
 - [ ] `sample.json` dates are in `YYYY-MM-DD` format
 - [ ] `sample.json` URLs include the full path `samples/skills/{skill-name}`
-- [ ] README tracking image URL matches `copilotprompts-{skill-name}`
+- [ ] README tracking image URL matches `copilotprompts-skill-{skill-name}`
 - [ ] README contains Instructions, Help, and Disclaimer sections
 - [ ] Author information is filled in
 

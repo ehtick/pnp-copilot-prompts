@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-creator-agent",
+    "name": "copilotprompts-agent-creator-agent",
     "source": "pnp",
     "title": "Generate structured Copilot agents",
     "shortDescription": "Generate structured Copilot agents",
@@ -14,13 +14,12 @@
     "products": [
       "Copilot"
     ],
-    "metadata": [
-    ],
+    "metadata": [],
     "thumbnails": [
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/creator-agent/assets/demo.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/creator-agent/assets/demo.png",
         "alt": "copilotprompts-creator-agent"
       }
     ],

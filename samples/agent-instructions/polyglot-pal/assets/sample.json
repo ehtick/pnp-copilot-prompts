@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-polyglot-pal",
+    "name": "copilotprompts-agent-polyglot-pal",
     "source": "pnp",
     "title": "Polyglot Pal - Spontaneous Language Buddy",
     "shortDescription": "An immersive language-learning companion that conducts micro-conversations in the user's target language and adapts in real time",
@@ -22,7 +22,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/polyglot-pal/assets/demo.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/polyglot-pal/assets/demo.png",
         "alt": "copilotprompts-polyglot-pal"
       }
     ],
