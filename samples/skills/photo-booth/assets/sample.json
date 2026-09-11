@@ -1,0 +1,51 @@
+[
+  {
+    "name": "copilotprompts-skill-photo-booth",
+    "source": "pnp",
+    "title": "Photo Booth Skill for Microsoft 365 Copilot",
+    "shortDescription": "Create a photorealistic 3x3 photo-booth grid from reference images with strict visual continuity.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/skills/photo-booth",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/skills/photo-booth",
+    "longDescription": [
+      "This skill creates a synchronized 3x3 photo-booth grid from reference images while preserving the subjects, wardrobe, environment, lighting, framing, and photographic treatment. Package SKILL.md at the root of a ZIP archive and upload it to a Declarative Agent in Microsoft 365 Copilot Agent Builder. Custom skills are currently available in preview through the Microsoft Frontier Program, with general availability planned soon."
+    ],
+    "creationDateTime": "2026-09-11",
+    "updateDateTime": "2026-09-11",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/skills/photo-booth/assets/demo.png",
+        "alt": "Photo Booth skill generating a 3x3 portrait grid from reference images"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "abrakjamson",
+        "pictureUrl": "https://github.com/abrakjamson.png",
+        "name": "Abram Jackson"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft 365 Copilot",
+        "description": "Microsoft 365 Copilot",
+        "url": "https://www.microsoft.com/microsoft-365/copilot"
+      },
+      {
+        "name": "Lab E12 - Build Agent with Skill using Agent Builder",
+        "description": "Hands-on lab for packaging, uploading, publishing, and testing a custom skill in Microsoft 365 Copilot Agent Builder.",
+        "url": "https://microsoft.github.io/copilot-camp/pages/extend-m365-copilot/12-skills-da-agent-builder/"
+      },
+      {
+        "name": "Abram Jackson",
+        "description": "Author profile",
+        "url": "https://www.linkedin.com/in/abramj/"
+      }
+    ]
+  }
+]
